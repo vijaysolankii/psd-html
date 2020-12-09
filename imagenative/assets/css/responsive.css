@@ -1,0 +1,472 @@
+/* ================================================
+  Fonts : Georgia
+================================================ */
+@font-face {font-family: 'Georgia';src:url('../fonts/Georgia-Bold.eot');src:url('../fonts/Georgia.eot?#iefix') format('embedded-opentype'),url('../fonts/Georgia.woff2') format('woff2'),url('../fonts/Georgia.woff') format('woff'),url('../fonts/Georgia.ttf') format('truetype'),url('../fonts/Georgia.svg#Georgia') format('svg');font-weight: normal;font-style: normal;font-display: swap;}
+
+
+/* ==== 1200px ==== */
+@media (max-width: 1200px) {
+  body {overflow-x: hidden;}
+  /*==========================================================================Blog List Section Start========================================================================== */
+  .blog-list h3 {margin: -1.95em auto -0.45em !important;font-size: 25px;}
+  .blog-list h3:before, .blog-list h3:after {border-bottom: 3px solid #d2d2d2 !important;}
+  .blog-list h3::before{margin:0px 2% -3px -55% !important}
+  .blog-list .row-1 .col-md-3,.row-2 .col-md-3 {padding: 0%;}
+  .blog-list h3{font-size: 25px;}
+  .blog-list .list span {font-size: 17px !important;position: relative;bottom: 5px;}
+  .blog-list .list img{max-width: 100% !important;  height: auto !important;}  
+  .blog-list .list .col-md-9{padding: 0px 0px 0px 10px !important;}
+  .blog-list .list p{ padding: 0 0 0 0 !important;font-size: 14px; }
+  .blog-list .col-md-4 {padding: 0px 15px !important;}
+  /*==========================================================================Blog List Section Ends========================================================================== */
+
+  .detail h3:before, .detail h3:after {content: "";vertical-align: super;display: inline-block !important;width: 20% !important;height: 0.65rem !important;border-bottom: 5px solid #d2d2d2 !important;margin: 0px 0% -4px 2% !important;}
+  .detail .list .detail-img {padding: 15px 0px 0px 5px !important;}
+  .detail .list .text {position: relative;color: #000;text-transform: capitalize;top: 25px;left: 55px;font-size: 20px !important;font-family: "Georgia", sans-serif;}
+  .detail .list p {padding: 30px 10px 0px 55px;font-size: 18px;font-family: "Georgia", sans-serif;}
+  .detail .list a {color: #97455f;text-decoration: none;font-size: 15px;padding: 0% !important;font-family: "Georgia", sans-serif;padding: 0 0 0 55px !important;}
+  .testinomial img {padding: 30px 0px 0px 10px;}
+  .testinomial-content {padding: 10px 5px 10px 5px;font-size: 18px;font-family: "Georgia", sans-serif;}
+  .testinomial h5 {font-size: 25px !important;padding: 28px 0px 0px 40px;}
+  .testinomial a {color: #97455f !important;text-decoration: none !important;font-size: 16px !important;padding: 30px 0px 0px 40px !important;font-family: "Georgia", sans-serif;}
+  .contact-bn{padding: 20px 0 !important;}
+  .contact-bn h1{font-size: 40px;}
+  .contact-bn p{font-size: 19px;}
+  .contact-bn .btn {font-size: 22px !important;margin: 0px 0px !important;}
+  .contact .blog-content p {padding: 10px 0px 0px 45px;}
+  .contact .blog-content h4 {font-size: 18px !important;position: relative !important;left: 45px !important;}
+}
+
+/* ==== 992px ==== */
+@media (max-width: 991.98px) {
+  /* Header Start  */  
+  .head-text h1 {font-size: 30px !important;bottom: 10px;position: relative;}
+  .head-text h1::after{top: 15px !important;margin: 0 0 0 5px !important;position: absolute !important;content: '' !important;height: 40px !important;width: 100px !important;border-left: 1px solid #a1a1a1 !important;}
+  .second-text{padding: 0px 10px 0px 10px  !important;}
+  .form-inline {padding: 05px 0px 0px 0px;}
+  .carousel-item {height: 350px !important;}
+  .navbar-collapse ul li a.nav-link::before {position: relative !important;display: block !important;width: 100% !important;}
+  .navbar {position: absolute !important;width: 100% !important;transition: top 0.3s !important;top: 0 !important;display: block !important;/*  bottom: 20px !important; */pointer-events: all;z-index: 500 !important;background-color: #97455f;pointer-events: all ! ;}
+  .second-text {padding: 0px 10px 0px 10px  !important;}
+  .form-inline{padding: 5px 0px 0px 0px;}
+  /* Header Ends */
+  
+  /* carousel Section Start */
+  .my_carousel {padding: 0%;margin: 0%;position: relative;top: 30px;position: relative;}
+  .my_carousel .carousel-caption{padding: 10px;bottom: 50px !important;}
+  .my_carousel .carousel-caption h1{font-size: 20px;}
+  .my_carousel .carousel-caption p{font-size: 15px;}
+  /* carousel Section Ends */
+
+  /* Blog List Section Start */
+  .blog-list h3 {padding: 50px 0px 50px 0px;margin: -1.95em auto -0.45em !important;font-size: 25px;}
+  .blog-list h3:before, .blog-list h3:after {border-bottom: 3px solid #d2d2d2 !important;}
+  .blog-list h3::before{margin:0px 2% -3px -55% !important}
+  .blog-list .row-1 .col-md-3,.row-2 .col-md-3 {padding: 0%;}
+  .blog-list h3{font-size: 25px;}
+  .blog-list .list span {font-size: 17px !important;position: relative;bottom: 5px;}
+  .blog-list .list img{max-width: 100% !important;  height: auto !important;}  
+  .blog-list .list .col-md-9{padding: 0px 0px 0px 10px !important;}
+  .blog-list .list p{ padding: 0 0 0 0 !important;font-size: 14px; }
+  .blog-list .col-md-4 {padding: 0px 15px !important;}
+  /* Blog List Section Ends */
+
+
+  /* Detail Section Start */
+  .detail h3:before {width: 18% !important;margin: 0px 1% -3px 3% !important;border-bottom: 3px solid #d2d2d2 !important;}
+  .detail h3:after{ width:18% !important; margin: 0px 1% -3px 5px !important;border-bottom: 3px solid #d2d2d2 !important;}
+  .detail h3{font-size: 20px;}
+  .detail .list .detail-img img{height: auto;max-width: 100%;}
+  .blog-list .list {padding: 0px 0px 0px 20px !important;}
+  .detail .list .detail-img {padding: 15px 0px 0px 0px !important;}
+  .detail .list .text {top: 15px;font-size: 18px !important;left: 5px;}
+  .detail .list p {padding: 15px 0px 5px 5px;font-size: 14px;}
+  .detail .list a {padding: 0 0 0 5px !important;font-size: 14px;}
+  .testinomial img {padding: 10px 0px 0px 0px;}
+  .testinomial {padding: 10px 0px 0px 0px !important;}
+  .testinomial h5 {font-size: 18px !important;padding: 8px 0px 0px 30px !important;}
+  .testinomial a{font-size: 14px !important;padding: 30px 0px 0px 30px !important;}
+  .testinomial-content {font-size: 14px;padding: 10px 0 0 0;}
+  .contact-bn .btn {font-size: 20px !important;margin: 0px 0 !important;}
+  .contact-bn h1 {font-size: 35px;}
+  .contact-bn p {font-size: 17px;}
+  .contact-bn{padding: 20px 0;}  
+  .contact-bn .col-md-7{ padding: 10px 20px 10px 20px; }
+  /* Detail Section Ends */
+
+  /* Contact Footer Start */
+  .contact .col-md-5 { padding: 0px 10px 0px 10px; }
+  .contact .col-md-4 { padding: 0px 10px 0px 0px; }
+  .contact .col-md-3 { padding: 0px 10px 0px 0px; }
+  .contact .blog-content {padding: 25px 0px 5px 0px;}
+  .contact .blog-listing span { padding: 20px 0; font-size: 20px;top: 10px;left: 11px;} 
+  .contact .blog-content h4 {font-size: 18px !important;position: relative !important;left: 25px !important;}
+  .contact .blog-content p {padding: 5px 0px 0px 25px;font-size: 15px;}
+  .blog-content .col-md-3 {padding: 0px 0px 0px 10px;}
+  .contact .blog-content img {max-width: 100%;height: auto;}
+  .blog-content .col-md-9 {padding: 0px 0px 0px 15px;}
+  .blog-content .col-md-3:last-child{padding-left: 0% !important;}
+  .contact .company-data span {font-size: 20px;top: 10px;left: 10px;}
+  .contact .company-address {padding: 20px 0px 0px 0px;}
+  .contact .company-address p, .contact .company-contact p, .contact .company-office-timing p {padding: 0px 0px 0px 10px;font-size: 14px;}
+  .user-form span {font-size: 20px;top: 10px;left: 0px;}
+  .user-form .form-data {padding: 20px 0px 0px 0px;}
+  .user-form .form-data .btn {padding: 3px;letter-spacing: 1.2px;border-radius: 3px;font-size: 14px;}
+  /* End of Contact Footer */
+
+  /* Footer */
+  footer span {color: #919191;font-size: 14px;}
+  /* Footer */
+
+
+}
+
+/* ===== 768px ===== */
+@media screen and (max-width: 767.98px) {
+  
+  /* Header Start  Menu/HeaderBar Start */
+  body{overflow-x: hidden !important;}
+  .first-toggle-sh-menu {padding: 0px 0px 0px 0px !important;display: inline-block;width: 100%;}
+  .first-toggle-sh-menu .tags {padding: 0px 20px 20px 0px;text-align: center;display: block;padding: 10px 0px 10px 0px;}
+  .first-toggle-sh-menu .menu {padding: 0px 0px 10px 0px;font-size: 15px;display: block;text-align: center;float: none;}
+  .first-toggle-sh-menu .ml-auto{margin-left: 0% !important;}
+  .head-text{margin: 0 auto !important;}
+  .head-text h1 {font-size: 60px !important;padding: 0 0px;}
+  .head-text h1::first-letter {font-size: 95px !important;}
+  .head-text h1::after{content: '';display: none;}
+
+  .second-logo-menu{padding: 30px 10px 150px 0px !important;}
+  .second-logo-menu .container .row .ml-auto{margin: 0 auto !important;}
+  .second-text {padding: 0px 80px 40px 80px !important;margin: 0 auto !important;}
+  
+  .form-inline {padding: 5px 20px 0px 50px;display: block;}
+  .form-inline .form-control {width: 72% !important;}
+  /* Header Ended */
+
+
+  .blog-content .col-md-3 {margin: 0 auto;text-align: center;}
+  .contact .blog-content h4 {top: 10px;text-align: center;}
+  .contact .blog-content p {padding: 15px 0px 0px 0px;font-size: 15px;text-align: center;}
+  .blog-content .col-md-9 {padding: 0px 0px 0px 0px;}
+  
+  /*==========================================================================Header Ends========================================================================== */
+
+  /*==========================================================================carousel Section Start========================================================================== */
+  .my_carousel {padding: 0%;margin: 0%;position: relative;top: 30px;}
+  .my_carousel .carousel-caption h1{font-size: 25px;}
+  .my_carousel .carousel-caption p{font-size: 13px;}
+  .my_carousel .carousel-caption {position: absolute;bottom: 50px !important;left: 59%;z-index: 0;padding: 10px;color: #fff;text-align: left;width: 40%;color: #000;}
+  /* .my_carousel .carousel-item{height: auto !important;} */
+
+  /*==========================================================================carousel Section Ends========================================================================== */
+
+  /*==========================================================================Blog List Section Start========================================================================== */
+  .blog-list{padding: 0 15px !important;}
+  .blog-list h3{font-size: 25px;}
+  .blog-list .list span {font-size: 16px;}
+  .blog-list .list img{max-width: 100% !important;  height: auto !important;}  
+  .blog-list .list .col-md-9 {padding: 0px 0px 0px 0px !important;}
+  .blog-list .list span {bottom: 0px;top: 10px;justify-content: left;display: flex;font-size: 20px !important;}
+  .blog-list .list p {padding: 10px 0 10px 0 !important;text-align: left;font-size: 20px;}
+  .blog-list .row-1{padding: 0% !important;}  
+  .blog-list {margin: 0px 0px 40px 0px !important;}
+  .blog-list h3 {font-size: 20px;}
+  .blog-list .row-1 .col-md-3, .row-2 .col-md-3{margin: 0 auto !important;text-align: center;}
+  .blog-list .list {padding: 0px 0px 0px 0px !important;} 
+  /*==========================================================================Blog List Section Ends========================================================================== */
+
+
+  /*==========================================================================Detail Section Start========================================================================== */
+  .detail h3:before {width: 25% !important;margin: 0px 1% -3px 5% !important;}
+  .detail h3:after{ width: 25% !important;margin: 0px 0px -3px 5px !important;}
+  .detail h3{font-size: 30px;}
+  .detail .col-md-12,.detail .list .col-md-9{padding: 0%;}
+  .detail .list .detail-img {margin: 0 auto;text-align: center;}
+  .detail .list .detail-img img{height: auto;max-width: 100%;}
+  .detail .list .text {position: relative; padding: 15px 0px 5px 5px;top: 15px;font-size: 18px !important;left: 5px;}
+  .detail .list p {padding: 15px 0px 5px 5px;font-size: 14px;}
+  .detail .list a {padding: 0 0 0 5px !important;font-size: 14px;}
+  .testinomial {padding: 15px 0 0 0;margin: 0 auto;text-align: center;}
+
+  .testinomial h5 {font-size: 20px !important;padding: 8px 0px 0px 30px !important;}
+  .testinomial a{font-size: 18px !important;}
+  .testinomial-content {font-size: 20px;padding: 10px 0 0 25px;}
+  .contact-bn .btn {font-size: 17px !important;margin: 05px 0 !important;}
+  .contact-bn h1 {font-size: 29px;}
+  .contact-bn p {font-size: 13px;}
+  .detail .container .row .container{padding: 0% !important;}
+  .detail .container .col-md-6{padding: 0% !important;}
+  .detail .container .row .list .col-md-10{padding: 0% !important;}
+  .detail .list .text {margin: 0 auto !important;justify-content: left;display: flex;font-size: 24px !important;top: 10px;padding: 20px 0 0 25px;}
+  .detail .list p {padding: 15px 15px 5px 30px;font-size: 20px;text-align: left;}
+  .detail .list a {padding: 0 0 10px 30px !important;font-size: 18px;display: flex;justify-content: left;}
+
+  /*==========================================================================Detail Section End========================================================================== */
+  
+
+  /*==========================================================================Contact Footer Start========================================================================== */
+  .contact .blog-content {padding: 25px 0px 5px 0px;}
+  .contact .blog-listing span { padding: 20px 0; font-size: 20px;top: 10px;left: 0px;} 
+  .contact .blog-content h4 {font-size: 20px !important;left: 0px !important;top: 5px;}
+  .card-body {-ms-flex: 1 1 auto;flex: 1 1 auto;min-height: 1px;padding: 10px 0px 0px 0px !important;}
+  .contact-bn h1 {font-size: 25px;text-align: center;}
+  .contact .blog-content p {padding: 5px 0px 0px 0px;font-size: 14px;}
+  .blog-content .col-md-3 {padding: 0px 0px 0px 10px;}
+  .contact .blog-content img {max-width: 100%;height: auto;}
+  .blog-content .col-md-9 {padding: 0px 0px 0px 15px;}
+  .blog-content .col-md-3:last-child{padding-left: 0% !important;}
+  .contact .company-address {padding: 20px 0px 0px 0px;}
+  .user-form span {font-size: 20px;top: 10px;left: 0px;}
+  .user-form .form-data {padding: 20px 0px 0px 0px;}
+  .user-form .form-data .btn {padding: 3px;letter-spacing: 1.2px;border-radius: 3px;font-size: 14px;}
+  .contact-bn p {font-size: 20px;text-align: center;padding: 0;}
+  
+  .contact .company-address p, .contact .company-contact p, .contact .company-office-timing p {padding: 0px 0px 0px 0px;font-size: 15px;}
+  .contact .company-data span {font-size: 20px;top: 10px;left: 0px;}
+
+  /*==========================================================================End of Contact Footer========================================================================== */
+
+
+  /*=====================================Footer===================================== */
+  footer span {color: #919191;font-size: 14px;}
+  .contact .col-md-5{padding: 0 15px;margin: 0 auto;}
+  .contact .company-data{padding: 0 15px;margin: 0 auto;}
+  .contact .user-form{padding: 0 15px;margin: 0 auto;}
+  .contact .blog-content .col-md-3 {padding: 0 0 0px 0 !important;margin: 0 auto !important;text-align: left !important;}
+  .contact .blog-content .col-md-9 {padding: 0% !important;}
+  .contact .blog-content h4,
+  .contact .blog-content p {text-align: left !important;}
+
+
+
+  .contact .company-office-timing h5 {padding: 0px 0px 0px 0px;}
+  footer span {font-size: 15px;text-align: center !important;}
+  footer span:last-child {display: none;}
+  
+
+}
+
+/* ===== 480px ===== */
+@media (min-width: 420.98px) and (max-width:480px) {
+
+  /* Header Resizing */
+  .head-text{display: block;margin: 0 auto !important;}
+  .head-text h1 {font-size: 50px !important;}
+  .head-text h1::first-letter {font-size: 80px !important;}
+  .head-text h1::after{content: '';display: none;}
+  
+  .second-logo-menu .second-text {text-align: center !important;padding: 0px 20px 0 20px !important;}
+
+  .contact .company-data{padding: 0 15px;}
+  .contact .user-form{padding: 0 15px;}
+  .second-text {padding: 13px 0px 0px 0px !important;font-size: 15px;position: relative;right: 0px;}
+  .my_carousel .carousel-item{height: auto !important;}
+  .second-logo-menu .ml-auto{margin-left: 0% !important;}
+  .head-text{margin: 0 auto !important;text-align: center !important;}
+  .second-logo-menu .second-text{margin: 0 auto;text-align: left;}
+  .head-text h1 {font-size: 30px;padding: 0 0 0 0px !important;position: relative;right: 0px;}
+  .form-inline .form-control {width: 70% !important;}
+  .second-logo-menu .my-nav{margin: 0 auto !important; justify-content: center !important;display: flex !important;}
+}
+
+/* ===== 420px ===== */
+@media (max-width: 420px) {
+  body{overflow-x: hidden !important;}
+  .head-text h1::after{content: '';display: none;}
+  .my_carousel .carousel-item{height: auto !important;}
+  .second-text {margin: 0 auto !important;text-align: center !important;}
+  .second-logo-menu .ml-auto{margin-left: 0% !important;}
+  
+  .head-text{margin: 0 auto !important;text-align: center !important;font-size: 30px !important;}
+  .second-logo-menu .second-text{margin: 0 auto;text-align: left;}
+  .head-text h1 {font-size: 45px;padding: 0 0 0 0px;}
+  .head-text h1::first-letter {font-size: 60px !important;padding: 0 0 0 0px;}
+  .second-logo-menu .form-inline{margin: 0 auto !important;text-align: center !important;padding: 15px 0 0 15px;}
+  .detail h3 {font-size: 18px !important;padding: 10px 0px 10px 0px;}
+  .row-1{margin-bottom: 0px !important;}
+  .my_carousel .carousel-caption {display: none;}
+  .blog-list .list {padding: 0px 0px 30px 0px !important;}
+  .second-text {padding: 12px 0px 0px 05px !important;font-size: 15px;}
+  .form-inline .form-control {width: 70% !important;}
+  .second-logo-menu .my-nav{margin: 0 auto !important; justify-content: center !important;display: flex !important;}
+  .blog-list h3 {font-size: 20px;}
+  .blog-list .row-1 .col-md-3, .row-2 .col-md-3{margin: 0 auto !important;text-align: center;}
+  .first-toggle-sh-menu {padding: 0px 0px 0px 0px !important;display: inline-block;width: 100%;}
+  .card-body {-ms-flex: 1 1 auto;flex: 1 1 auto;min-height: 1px;padding: 10px 0px 0px 0px !important;}
+  .first-toggle-sh-menu .tags {padding: 0px 20px 20px 0px;text-align: center;display: block;padding: 10px 0px 10px 0px;}
+  .first-toggle-sh-menu .menu {padding: 0px 0px 10px 0px;font-size: 15px;display: block;text-align: center;float: none;}
+  .first-toggle-sh-menu .ml-auto{margin-left: 0% !important;}
+  .contact .blog-listing span {left: 0px;}
+  .blog-list .list span {bottom: 0px;top: 5px;justify-content: center;display: flex;}
+  .blog-list .list p {padding: 15px !important;text-align: center;}
+  .blog-list .row-1{padding: 0% !important;}  
+  .detail .list .col-md-6{background-color: #000 !important;}
+  .blog-list {margin: 0% !important;position: relative;width: 100% !important;display: inline-block;padding: 0 0px 0 0px;}
+  
+  .detail .list .detail-img {margin: 0 auto;text-align: center;}
+  .detail .list .text {margin: 0 auto !important;justify-content: center;display: flex;font-size: 20px !important;top: 10px;padding: 20px 0 0 0px !important;}
+  .detail .list p {padding: 15px 0px 15px 5px !important;font-size: 20px;text-align: left;}
+  .detail .list a {padding: 0 0 10px 5px !important;font-size: 15px;display: flex;justify-content: left;}
+  .testinomial {padding: 15px 0 0 0;margin: 0 auto;text-align: center;}
+  
+  .testinomial a {padding: 0px 0px 0px 0px !important;}
+  .testinomial h5 {padding: 10px 0px 0px 0px !important;}
+  .testinomial-content {text-align: center;  padding: 10px 0 0 0px !important;}
+  .blog-content .col-md-3 {margin: 0 auto;text-align: center;}
+  
+
+  .contact .blog-content .col-md-3 {padding: 0 0 0px 0 !important;margin: 0 auto !important;text-align: left !important;}
+  .contact .blog-content .col-md-9 {padding: 0% !important;}
+  .contact .blog-content h4,
+  .contact .blog-content p {text-align: left !important;}
+
+  .contact .company-address p, .contact .company-contact p, .contact .company-office-timing p {padding: 0px 0px 0px 0px;font-size: 15px;}
+  .contact .company-data span {left: 0px;}
+  .contact-bn {padding: 15px 0px !important;margin: 30px 0px 50px 0px !important;}
+  .container-1 {max-width: 100% !important;padding: 0px 0px !important;}
+  .contact-bn h1 {font-size: 25px;text-align: center;}
+  .contact-bn p {font-size: 15px;text-align: center;padding: 5px 5px 5px 5px;}
+  .contact .company-office-timing h5 {padding: 0px 0px 0px 0px;}
+  footer span {font-size: 15px;text-align: center !important;}
+  footer span:last-child {display: none;}
+  
+}
+
+/* ==== 320px ==== */
+@media (max-width: 320px) {
+  body {overflow-x: hidden !important;}
+  .menu-bar .navbar {position: absolute !important;width: 100% !important;transition: top 0.3s !important;top: 0 !important;display: block !important;/* bottom: 20px !important; */pointer-events: all;z-index: 25 !important;background-color: #97455f;pointer-events: all !important;}
+
+  /*==========================================================================Header Start========================================================================== */    
+  .head-text {margin: 0 auto !important;}
+  .head-text h1 {font-size: 25px !important;padding: 10px 0 0 0px;}
+
+
+  .navbar-collapse ul li a.nav-link::before {position: relative !important;display: block !important;width: 100% !important;}
+  .navbar {position: absolute !important;width: 100% !important;transition: top 0.3s !important;top: 0 !important;display: block !important;/* bottom: 20px !important; */pointer-events: all;z-index: 10 !important;background-color: #97455f;pointer-events: all !important;}
+  .head-text h1::first-letter {font-size: 40px !important;font-weight: bold;text-transform: uppercase;}
+  .second-text {padding: 8px 0px 5px 5px !important;font-size: 15px;display: inline-block;margin: 0 auto !important;text-align: center !important}
+  .form-inline {padding:10px 0 0 45px;}
+  .form-inline ::placeholder{font-size: 11px;}
+  .second-logo-menu .form-inline{margin: 0 auto !important;text-align: center !important;padding: 15px 0 0 50px;}
+
+
+  nav .form-inline .form-control{padding: 3px 5px !important;height: auto;}
+  .first-toggle-sh-menu {padding: 0px 0px 0px 5px !important;display: block !important;}
+  .card-body {-ms-flex: 1 1 auto;flex: 1 1 auto;min-height: 1px;padding: 10px 0px 0px 0px !important;}
+  .first-toggle-sh-menu .tags {padding: 0px 20px 20px 0px;text-align: center;display: block;padding: 10px 0px 10px 0px;}
+  .first-toggle-sh-menu .menu {padding: 0px;font-size: 13px;}
+  .row-1{margin-bottom: 40px !important;}
+  .form-inline .btn{padding: 3px !important;}
+  .form-inline .form-control {width: 55% !important;}
+  .second-logo-menu {padding: 20px 0 120px 0px;background-color: #d2d2d2;position: relative;}  
+  /*==========================================================================Header Ends========================================================================== */  
+
+  /*==========================================================================carousel Section Start========================================================================== */
+  .my_carousel {padding: 0%;margin: 0%;position: relative;top: 30px;}
+  /*==========================================================================carousel Section Ends========================================================================== */
+
+  /*==========================================================================Blog List Section Start========================================================================== */
+  
+  .blog-list {margin: 0px 0px 20px 0px;}
+  .blog-list h3 {font-size: 20px;padding: 0px 0px 40px 0px;}
+  .blog-list h3::before,
+  .blog-list h3::after {border-bottom: 3px solid #d2d2d2 !important;}
+  .blog-list .list {padding: 0px 0px 30px 0px !important;}
+  .blog-list .list p {font-size: 15px !important;}
+  .blog-list .list:last-child {padding: 0px 0px 0px 0px !important;}
+  .row-1 {padding: 0 0 20px 0 !important;}
+  .blog-list .row-1 .row,.row-2 .row,  .detail .list {margin: 0 auto;text-align: center;}
+  .blog-list .list .col-md-9 {padding: 0px 10px 0px 10px !important;}
+  .blog-list .list span {font-size: 17px !important;position: relative;bottom: 0px;top: 3px;}
+
+  /*==========================================================================Blog List Section Ends========================================================================== */  
+  
+  /*==========================================================================Detail Section Start========================================================================== */
+
+  .detail h3 {font-size: 18px !important;padding: 10px 0px;}
+  .detail h3::before, .detail h3::after {content: "";vertical-align: super;display: inline-block !important;width: 17% !important;height: 0.65rem !important;margin: 0px 1% -1px 4% !important;border-bottom: 3px solid #d2d2d2 !important;}
+  .detail h3::after {/* margin: 0px 0% -4px -5% !important; */margin: 0 -7% 0 1% !important;border-bottom: 3px solid #d2d2d2 !important;}
+  .detail .list .detail-img {padding: 0px !important;}
+  .detail .col-md-12,.detail .col-md-9 {padding: 0%;}
+  .detail .list p {padding: 22px 0px 0px 0px;font-size: 15px;}
+  .detail .list .text {font-size: 18px !important;top: 10px;}
+  .detail .list a {position: relative;padding: 22px 0px 0px 0px;/* padding-top: 500px !important; */}
+  .testinomial .col-md-1 {margin: 0 auto;text-align: center;padding: 10px 0px;}
+  .testinomial {padding: 0px 0 0 0;}
+  .testinomial h5 {font-size: 20px !important;padding: 10px 10px 10px 10px;text-align: center;}
+  .testinomial a {display: none;}
+  .testinomial img {padding: 0%;}
+  .testinomial-content {text-align: left;font-size: 15px;padding: 10px 0 0 0;}
+  .contact-bn {padding: 20px !important;margin: 20px 0 !important;}
+  .contact-bn .col-md-12,.contact-bn .col-md-7 {padding: 0%;margin: 0%;}
+
+  .contact-bn h1 {font-size: 25px !important;text-align: left;}
+  .contact-bn p {font-size: 15px;padding: 10px 0;text-align: left;}
+  .contact-bn .col-md-4 {padding: 0%;}
+  .contact-bn .btn {font-size: 15px !important;margin: 10px 0;}
+  
+  /*==========================================================================Detail Section End========================================================================== */
+
+
+
+  /*==========================================================================Contact Footer Start========================================================================== */
+  
+  .contact .blog-listing span {font-size: 20px !important;    left: 0px;}
+  .contact .blog-content {padding: 20px 0px 05px 0px !important;}
+  
+  .company-data span {margin: 0 auto !important;text-align: left !important;}
+  .contact .company-data span {font-size: 20px !important;left: 0px !important;}
+  .contact .company-office-timing h5 {padding: 0px 0px 0px 0px;}
+  .company-data p {font-size: 15px !important;padding: 0% !important;}
+  .user-form span {font-size: 20px !important;left: 0px !important;}
+  .user-form .form-data {padding: 30px 0px 0px 0px !important;}
+  
+  
+  /*==========================================================================End of Contact Footer========================================================================== */
+  
+  /*==========================================================================Footer Start========================================================================== */
+  
+  footer span {font-size: 13px;text-align: center !important;}
+  footer span:last-child {display: none;}
+  
+  /*==========================================================================Footer Ends========================================================================== */
+
+}
+
+/* Special Case Media Queries */
+@media screen and (min-width:321px) and (max-width:397.98px){html{overflow-x: hidden !important;}} 
+@media screen and (min-width:550px) and (max-width:600px){html{overflow-x: hidden !important;}} 
+@media screen and (min-width:481px) and (max-width:550px){html{overflow-x: hidden !important;}} 
+@media screen and (min-width:680px) and (max-width:767.98px){.head-text{margin: 0 auto !important; text-align: center !important;}} 
+@media screen and (min-width:481px) and (max-width:755px){.head-text{margin: 0 auto !important; text-align: center !important;}.my_carousel .carousel-caption {display: none;}} 
+@media screen and (min-width:321px) and (max-width:420px){
+  .head-text{display: block;margin: 0 auto !important;}
+  .head-text h1 {font-size: 40px !important;}
+  .head-text h1::first-letter {font-size: 70px !important;}
+  .head-text h1::after{content: '';display: none;}
+}
+@media (max-width:1550px){
+  body{overflow-x: hidden !important;}
+  .container-1{margin: 0 auto;padding: 0 15px 0 55px;}
+}
+@media (max-width:320.98px){html{overflow-x: hidden !important;background-color: #025ddd !important;}}
+
+/* ==== 556px & Below ==== */
+@media screen and (min-width:481px) and (max-width:600px){
+  body{overflow-x: hidden !important;}
+  .testinomial-content {font-size: 20px;padding: 10px 0 0 0px;}
+  .second-text {display: block !important;margin: 0 auto !important;padding: 20px 0px 0px 5px !important;font-size: 12px;text-align: center !important;}
+  .second-logo-menu .ml-auto{margin-left: 0% !important;}
+  .second-logo-menu .second-text{margin: 0 auto;text-align: left;}
+  .head-text{margin: 0 auto !important;}
+  .head-text h1 {font-size: 30px;margin-left: auto !important;margin-right: auto !important;}
+  .second-text {padding: 12px 0px 0px 05px !important;font-size: 15px;}
+  .form-inline .form-control {width: 70% !important;}
+  .second-logo-menu .my-nav{margin: 0 auto !important; justify-content: center !important;display: flex !important;}
+}
+
+@media screen and (min-width:321px) and (max-width:420px){
+  .detail h3:before {margin: 0px 1% -1px 4% !important;width: 20% !important;border-bottom: 3px solid #d2d2d2 !important;}
+  .detail h3::after {margin: 0 0% 0px 1% !important;border-bottom: 3px solid #d2d2d2 !important;width: 20% !important;}
+}

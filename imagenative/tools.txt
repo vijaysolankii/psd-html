@@ -1,0 +1,23 @@
+# Color Schema
+	1. #d2d2d2 
+	2. #97455f Primary color :
+	3. #6a3144 Hover Effect
+	4. 
+
+
+# Image Data:
+	1. 900 * 350 px for carousel
+		background: #adadad
+		header h1,p color : #383838
+
+	2. Indicator 
+		active with border : #383838
+		non-active : bcg #fff or transperent with #fff borders
+
+	3. 64*64 img
+		Main Text : #97455f
+	    secondry Text: #383838
+
+
+Font Styles
+	Georgia Regular

@@ -1,0 +1,51 @@
+// Define all Variable and data [like function,mixin]
+// IMport to the main.scss
+
+
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+
+// General Colors Variables
+$background-color: #fdfdfd;
+$primary-color:#07cb79;
+$nav-background:#24303e;
+$text-color:#fff;
+$secondary-color: #8c8c8c;
+
+
+@mixin transition-ease {
+    transition: all .5s ease-in-out;
+}
+
+@mixin testX {
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+// Media Queries
+
+// Max Width
+$lg-width:max-width; // 1200px
+$lg_md-width:max-width; // 991.98
+$md_max-width:max-width; // 767.98
+$sm_lg-width:max-width; // 580px
+$sm_md-width:max-width; // 480px
+$sm-width:max-width; // 420px
+$sm:max-width; //320px 
+$sm-mini:max-width; // 291px
+
+// Min Width
+$md_min-width: min-width; // 767.98 
+
+
+// Min Width-value
+$lg-target-width:1199.98px; // 1200px
+$lg_md-target-width:991.98px; // 991.98
+$md_max-target-width:767.98px; // 767.98
+$sm_lg-target-width:580px; // 580px
+$sm_md-target-width:480px; // 480px
+$sm-target-width:420px; // 420px
+$sm-target:320px; //320px 
+$sm-target-mini:290px; // 291px
+
+// Min Width-value
+$md_min-target-width: 767.98px; // 767.98 

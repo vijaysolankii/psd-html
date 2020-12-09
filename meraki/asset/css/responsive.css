@@ -1,0 +1,383 @@
+/*=========================================================
+  Responsive Styling
+=========================================================*/
+
+/* 1200px */
+@media (max-width: 1200px) {body {overflow-x: hidden;}.c-name,.c-position {display: none;}.header-info{box-shadow:none !important;}}
+
+/* 992px */
+@media screen and (min-width: 767.98px) and (max-width: 991.98px) {
+  body {overflow-x: hidden;}
+
+  /* NavBar */
+  .nav-item {padding: 0px 10px !important;}
+  .navbar-collapse ul li:hover a.nav-link::before{opacity: 0 !important;}
+  .navbar{position: absolute !important;width: 100% !important;transition: top 0.3s !important;top: 0 !important;display: block !important;display: flex;pointer-events: all;z-index: 2;}
+  
+  /* Inner Header Data */
+  .hero-banner .bg-effect .header-info {background-color: #fff !important;border-top: 10px solid #07cb79 !important;height: auto !important;width: auto !important;top: 0px !important;box-shadow:none !important;position: relative !important;}
+  .bg-effect {padding: 75px 0px 0px 0px !important;}  
+  .header-info .person-img {max-width: 30%;margin: auto;padding: 50px 0px 0px 0px  !important;}
+  .header-info .person-info {padding: 130px 0px 0px 0px !important;}
+  .header-info .person-info h1{font-size: 40px !important;}
+  .header-info .person-info span{font-size: 18px !important;padding: 0px;}
+  .header-info .person-info p{padding: 10px 0px;font-size: 15px !important;}
+  
+  /* About */
+  .about-content p {font-size: 15px !important;}
+  .tags li {font-size: 14px !important;padding: 10px 05px !important;}
+  .tags li i {font-size: 14px;}
+  .social-media-handle li:first-child{padding: 5px 10px 0px 0px;}
+
+  /* Testinomial */
+  .c-name,.c-position {display: none;}
+  .testimonial-content p {padding: 0px 0px 20px 0px !important;}
+  
+  /* Services */
+  .service-card p {font-size: 14px !important;}
+
+  /* Educationn */
+  .education img{display: none;}
+}
+
+/* 768px */
+@media screen and (max-width: 767.98px) {
+  body {overflow-x: hidden;}
+  
+  /* NavBar */
+  .navbar-collapse ul li a.nav-link::before {position: absolute !important;display: block !important;width: 100% !important;}
+  .navbar{position: absolute !important;width: 100% !important;transition: top 0.3s !important;top: 0 !important;display: block !important;display: flex;pointer-events: all;z-index: 2;}
+  .navbar-nav .nav-item .nav-link {padding: 10px 0px !important;}
+  .navbar-collapse ul li:hover a.nav-link:before {bottom: 5px !important;width: 50% !important;left: 10px !important;}
+
+  /* Inner Header Data */
+  .header-info{background-color: transparent !important;border: none !important;}
+  .header-info .person-img {max-width: 50%;margin: 0 auto;padding: 10px 0px 30px 0 !important;position: relative;top: 0px;/* bottom: ; */}  
+  .header-info .person-info{border-top: 5px solid #07cb79;}
+  .header-info .person-info h1{font-size: 35px !important;padding: 10px 10px 0px 10px;}
+  .header-info .person-info span{font-size: 20px !important;padding: 10px 10px 0px 10px;}
+  .header-info .person-info p{padding: 10px 10px;font-size: 16px !important;/* text-align: justify; */}
+  .header-info .person-info {background-color: #fff !important;opacity: 0.80;max-width: 100%;position: relative;bottom: 20px;}
+  .header-info .person-info{padding: 10px 0px !important;}
+  .btn-1{padding: 5px 10px !important;margin: 0px 05px 0px 10px !important;letter-spacing: 1px !important;}
+  .btn-2{padding: 5px 10px !important;margin: 0% !important;letter-spacing: 1px !important;}
+
+  /* About */
+  .about-content p{text-align: justify;}
+  /* .about-img {padding: 10px 0px 10px 0px !important;} */
+  .about p {margin: 0% !important;}
+
+  /* Services */
+  .services p {margin: 0% !important;padding: 0px 0px 30px 0px !important;}
+  .service-card {background-color: #fff;margin: 0px 0px 10px 0px !important;border: 1px solid rgba(0, 0, 0, 0.01);}
+  .service-card h4 {font-size: 25px;padding: 10px 15px !important;}
+  .service-card p {padding: 15px 15px !important;}
+  .service-card img {padding: 10px 15px;}
+
+  /* ProgressBar */
+  .progress-row {padding: 0px 0px 0px 0px !important;}
+  
+  /* Education */
+  .education p,.experiance p {font-size: 15px !important;padding: 0px 0px 30px 0px;}
+  .edu-details-card h4,.experiance-details-card h4{font-size:20px ;}
+  .edu-details-card span,.experiance-details-card span{font-size: 15px;}
+  .edu-details-card p:last-child,.experiance-details-card p:last-child{font-size: 13px !important;font-weight: 500 !important;}
+  .education img {display: none;}
+
+  /* Experiance */
+  .experiance-details-card:last-child,.edu-details-card:last-child {margin: 0% !important;}
+  .custom-row:last-child {padding: 0px !important;}
+  .card-details {margin: 0px 0px 20px 0px !important;}
+  .contact p {margin: 0%;}
+  .experiance p {margin: 0%;}
+  .custom-row p {padding: 0px 0px 5px 0px !important ;}
+
+  /* Testinomial */
+  .testimonial .carousel-inner .carousel-item .img-fluid{max-width: 20%;}
+  /* .testimonial .carousel-inner{text-align: center;} */
+  
+  /* Portfolio */
+  .portfolio img {width: 100%;max-width: 100%;}
+  .portfolio .gallery_product .col-md-8 {max-width: 50% !important;flex: 0 0 50% !important;}
+ 
+  /* Contact */
+  .card-content {margin: 20px 0px !important;}
+  .contact-img {display: none;}
+  .address-info p i{display: inline-block !important;}
+  .address-info .contact-details {padding: 10px 0px 10px 35px !important;}
+}
+
+/* 556px */
+ @media (max-width: 556px) {
+  
+  /* NavBar */
+  /* .navbar-collapse ul li:nth-child(1):hover a.nav-link:nth-child(1):before {width: 14% !important;} */
+  /* .navbar-collapse ul li:nth-child(2):hover a.nav-link:nth-child(1):before{width: 15.5%!important;} */
+  /* .navbar-collapse ul li:nth-child(4):hover a.nav-link:nth-child(1):before{width: 25%!important;} */
+  /* .navbar-collapse ul li:nth-child(5):hover a.nav-link:nth-child(1):before{width: 19%!important;} */
+  /* .navbar-collapse ul li:nth-child(6):hover a.nav-link:nth-child(1):before{width: 30%!important;} */
+  /* .navbar-collapse ul li:nth-child(7):hover a.nav-link:nth-child(1):before{width: 12%!important;} */
+  /* .navbar-collapse ul li:nth-child(8):hover a.nav-link:nth-child(1):before{width: 21%!important;} */
+  .navbar-nav .nav-item .nav-link {padding: 10px 0px !important;}
+  .navbar-collapse ul li:hover a.nav-link:before {bottom: 5px !important;width: 50% !important;left: 10px !important;}
+
+  /* Inner Header/Banner Data */
+  .header-info .person-img { margin: 0 auto;}
+  .header-info .person-img {max-width: 50%;margin: auto;padding: 10px 0px;}  
+  .header-info .person-info{border-top: 5px solid #07cb79; }
+  .header-info .person-info h1{font-size: 35px !important;padding: 10px 10px 0px 10px;}
+  .header-info .person-info span{font-size: 20px !important;padding: 10px 10px 0px 10px;}
+  .header-info .person-info p{padding: 10px 10px;font-size: 16px !important;/* text-align: justify; */}
+  .header-info .person-info {background-color: #fff !important;opacity: 0.80;}
+  .btn-1{padding: 5px 10px !important;margin: 0px 05px 0px 10px !important;letter-spacing: 1px !important;}
+  .btn-2{padding: 5px 10px !important;margin: 0% !important;letter-spacing: 1px !important;}
+
+  /* About */
+  .about-content p{text-align: justify;}
+
+  /* Services */
+  .services p {padding: 0px 0px 30px 0px !important;}
+  .service-card {background-color: #fff;margin: 0px 0px 10px 0px !important;border: 1px solid rgba(0, 0, 0, 0.01);}
+  .service-card h4 {font-size: 25px;padding: 10px 15px !important;}
+  .service-card p {padding: 15px 15px !important;}
+  .service-card img {padding: 10px 15px;}
+  
+  /* Contact */
+  input[type="text"],input[type="email"],textarea {padding: 5px !important;/* margin: 4px !important; */border-bottom: 1px solid #8c8c8c !important;}
+  input[type="text"]:hover,input[type="email"]:hover,textarea:hover {border-bottom: 3px solid #07cb79 !important;}
+  .contact-img {display: none;}
+  .address-info .contact-details {padding: 20px 0px 20px 35px !important;}
+} 
+
+/* 480px */
+@media (max-width: 480px) {
+  /* NavBar */
+  .navbar-nav .nav-item .nav-link {padding: 10px 0px !important;}
+  .navbar-collapse ul li:hover a.nav-link:before {bottom: 5px !important;width: 50% !important;left: 10px !important;}
+
+  /* HeaderInfo Data */
+  .header-info .person-img {margin: 0 auto;}
+  .header-info .person-img {max-width: 50%;margin: auto;padding: 10px 0px;}  
+  .header-info .person-info{border-top: 5px solid #07cb79; }
+  .header-info .person-info h1{font-size: 30px !important;padding: 10px 10px;}
+  .header-info .person-info span{font-size: 15px !important;padding: 10px 10px;}
+  .header-info .person-info p{padding: 10px 10px;font-size: 13px !important;text-align: justify;}
+  .header-info .person-info {background-color: #fff !important;opacity: 0.80;}
+  .btn-1{padding: 0px 5px !important;margin: 0px 5px 0px 10px !important;letter-spacing: 0px !important;}
+  .btn-2{padding: 0px 5px !important;margin: 0% !important;letter-spacing: 0px !important;}
+
+  /* General Css */
+  .expertise h3,.education h3,.experiance h3,.portfolio h3,.testimonial h3,.blog h3,.contact h3,.my-intrest h3,.pricing-card h3,.about h3,.services h3{font-size: 25px;}
+  .about p,.services p,.expertise p,.education p,.experiance p,.portfolio p,.testimonial p,.blog p,.contact p,.my-intrest p,.pricing-card p{font-size: 15px; padding: 0px 0px 30px 0px;}
+  
+  /* About Css */
+  .about .about-content p {font-size: 14px;text-align: justify;}
+  .social-media-handle li {padding: 0px 17.5px 0px 0px !important;}
+  .social-media-handle li:first-child {width: 100%;padding: 0px 0px 10px 0px !important;}
+  
+  
+
+  /* Services */
+  .services p {padding: 0px 0px 30px 0px !important;}
+  .service-card {background-color: #fff;margin: 0px 0px 10px 0px !important;border: 1px solid rgba(0, 0, 0, 0.01);}
+  .service-card h4 {font-size: 25px;padding: 10px 15px !important;}
+  .service-card p {padding: 0px 15px 10px 15px !important;}
+  .service-card img {padding: 10px 15px;}
+  
+  /* ProgressBar */
+  .progress {height: 0.6rem;}
+  .progress-row span{font-size: 15px;}
+
+  /* Education  & Experiance*/
+  .experiance-details-card h4,.edu-details-card h4 {font-size: 17px;padding: 5px 0px;}
+  .experiance-details-card span,.edu-details-card span {font-size: 14px;}
+  .experiance-details-card p,.edu-details-card p {font-size: 13px;text-align: justify;}
+  .experiance-details-card:last-child,.edu-details-card:last-child {margin: 0% !important;}
+  .experiance .custom-row .head-text {font-size: 14px;}
+  .custom-row {padding: 0px 0px 25px 0px !important;}
+  .custom-row:last-child {padding: 0px !important;}
+  .card-details {margin: 0px 0px 15px 0px !important;}
+  .portfolio-cat  li {padding: 0px 05px !important;}
+  .filter-button {font-size: 13.80px;}
+
+
+  /* Pricing Cards */
+  .card-content .head-text span {font-size: 20px;}
+  .card-content .head-text h1 {font-size: 40px;}
+  .card-content .head-text p {font-size: 18px;}
+  .card-text .plans-feature li {font-size: 15px;}
+  .card-text button {margin: 10px 0px !important;padding: 5px 10px !important;}
+
+  /* Testinomial */
+  .testimonial-content p {font-size: 15px;text-align: justify;padding: 0% !important;}
+
+  /* Blogs */
+  .blog .topleft-img {font-size: 15px;padding: 5px 10px;}
+  .blog .blog-content h4 {font-size: 25px;}
+  .blog .blog-content p {font-size: 14px;/* text-align: justify; */}
+  .blog .blog-content .second-1p,.blog .blog-content .second-2p {font-size: 13px;text-align: justify;padding: 0px 0px 10px 0px;}
+  .blog .blog-content .tags li {font-size: 12px;padding: 10px 5px 0px 5px;}
+
+  /* Contact */
+  ::placeholder {font-weight: bold !important;font-size: 14px;font-family: "Poppins", sans-serif;}
+  input[type="text"],input[type="email"],textarea {padding: 0px 0px 2px 0px !important;margin: 4px 0 !important;border-bottom: 1px solid #8c8c8c !important;}
+  input[type="text"]:hover,input[type="email"]:hover,textarea:hover {border-bottom: 3px solid #07cb79 !important;}
+  ul li .contact-btn {padding: 0px 5px !important;letter-spacing: 0px !important;} 
+
+  /* Footer */
+  footer {padding: 0px 0px 20px 0px !important;}
+  .contact-img {display: none;}
+  .contact-img{display: none;}
+  .address-info .contact-details {padding: 15px 0px 10px 35px !important;}
+  .main-footer ul li {padding: 0px 07px !important;}
+  .secondry-footer {font-size: 15px;} 
+}
+
+/* 320px */
+@media (max-width: 320px) {
+  
+  /* NavBar */
+  .navbar-nav .nav-item .nav-link{font-size: 13px;}
+  .navbar-nav .nav-item .nav-link {padding: 10px 0px !important;}
+  .navbar-collapse ul li:hover a.nav-link:before {bottom: 5px !important;width: 20% !important;left: 10px !important;}
+  
+  /* Inner Header Data */
+  .header-info .person-img {max-width: 50%;margin: 0 auto;padding: 0px 0px 20px 0px;}
+  .header-info .person-info h1{font-size: 25px !important;}
+  .header-info .person-info span{font-size: 15px !important;}
+  .header-info .person-info p{padding: 10px !important;font-size: 13px !important;text-align: justify;}
+  .btn-1 {padding: 0px 8px !important;}
+  .btn-2{letter-spacing: 0px !important;}
+  .header-info .person-info {background-color: #fff !important;opacity: 0.80;border-top: 5px solid #07cb79;}
+
+  /* About Us */
+  .about h3 {font-size: 25px;}
+  .about p {font-size: 15px;margin: 0% !important;padding: 0px 0px 10px 0px;}
+  .about-content p {font-size: 13px !important;text-align: justify;}
+  .social-media-handle li:first-child {width: 100%;padding: 0px 0px 10px 0px !important;}
+  .social-media-handle li {padding: 0px 17px 0px 0px !important;}
+  
+  
+  /* Services */
+  .services h3 {font-size: 25px;}
+  .services p {margin: 0% !important;font-size: 13px;padding: 0px 0px 30px 0px !important;}
+  .service-card {background-color: #fff;margin: 0px 0px 10px 0px !important;border: 1px solid rgba(0, 0, 0, 0.01);}
+  .service-card h4 {font-size: 25px;padding: 10px 15px !important;}
+  .service-card p {padding: 0px 15px 10px 15px !important;}
+  .service-card img {padding: 10px 15px;}
+
+  /* Progress Bar */
+  .progress-row span {font-size: 13px;}
+  .progress {height: 0.5rem;}
+  .progress-row {padding: 0px;}
+
+  /* education & experiance */
+  .expertise h3 {font-size: 25px;}
+  .expertise p {font-size: 15px;padding: 0px 0px 30px 0px !important;}
+  .experiance h3,.education h3 {font-size: 25px;}
+  .experiance p,.education p {font-size: 15px;padding: 0px 0px 30px 0px;}
+  .experiance-details-card h4,.edu-details-card h4 {font-size: 15px;padding: 5px 0px;}
+  .experiance-details-card span,.edu-details-card span {font-size: 12px;}
+  .experiance-details-card p,.edu-details-card p {font-size: 12px;}
+  .experiance-details-card:last-child,.edu-details-card:last-child {margin: 0% !important;}
+  .experiance .custom-row .head-text {font-size: 14px;}
+  .custom-row {padding: 0px 0px 25px 0px;}
+  .custom-row:last-child {padding: 0px;}
+
+  /* Cards */
+  .my-intrest h3 {font-size: 25px;}
+  .my-intrest p {font-size: 15px;}
+  .card-details {margin: 0px 0px 10px 0px !important;}
+
+  /* Portfolio */
+  .portfolio h3 {font-size: 25px;}
+  .portfolio p {font-size: 15px;}
+  .filter-button {font-size: 11.4px;}
+
+  /* Pricing cards */
+  .pricing-card h3 {font-size: 25px;}
+  .pricing-card p {font-size: 15px;}
+  .card-content .head-text span {font-size: 18px;}
+  .card-content .head-text h1 {font-size: 25px;}
+  .card-content .head-text p {font-size: 12px;}
+  .card-text .plans-feature li {font-size: 12px;}
+  .card-text button {margin: 10px 0px !important;padding: 5px 15px !important;}
+
+  /* Testinomial */
+  .testimonial h3 {font-size: 25px;}
+  .testimonial p {font-size: 15px;}
+  .testimonial-content p {font-size: 13px !important;text-align: justify;padding: 0% !important;}
+
+  /* Blogs */
+  .blog h3 {font-size: 25px;}
+  .blog p {font-size: 15px;}
+  .blog .topleft-img {font-size: 14px;padding: 5px 15px;}
+  .blog .blog-content h4 {font-size: 20px;}
+  .blog .blog-content p {font-size: 14px;text-align: justify;}
+  .blog .blog-content .second-1p {font-size: 12px;padding: 0px 0px 10px 0px;}
+  .blog .blog-content .second-2p {font-size: 12px;padding: 0px 0px 10px 0px;}
+  .blog .blog-content .tags li {font-size: 12px;padding: 10px 0px 0px 5px;}
+
+  /* Contact */
+  .contact h3 {font-size: 25px;}
+  .contact p {font-size: 15px;margin: 0%;}
+  ::placeholder {font-weight: 500;font-size: 12px;font-family: "Poppins", sans-serif;}
+  input[type="text"],
+  input[type="email"],textarea {padding: 6px 0px 2px 0px !important;margin: 4px 0 !important;border-bottom: 2px solid #8c8c8c !important;}
+  input[type="text"]:hover,input[type="email"]:hover,textarea:hover {border-bottom: 3px solid #07cb79 !important;}
+  ul li .contact-btn {padding: 2px 5px !important;letter-spacing: 0px !important;}
+
+  /* Footer */
+  footer {padding: 0px 0px 20px 0px !important;}
+  .contact-img {display: none;}
+  .address-info .contact-details{display: block;}
+  .address-info .contact-details {padding: 10px 0px 10px 30px !important;}
+  .main-footer ul li {padding: 0px 07px !important;}
+  .secondry-footer {font-size: 15px;}
+}
+
+/* 291px */
+@media (max-width: 291px) {
+
+  /* NavBar */
+  .navbar-nav .nav-item .nav-link{font-size: 12px;}
+
+  /* HeaderInfo inner Hero Banner */
+  .header-info .person-info h1{ font-size: 25px !important; }
+  .header-info .person-info span{ font-size: 13px !important; }
+  .header-info .person-info p{ font-size: 10px !important; }
+  .person-info .btn { font-size: 0.91rem !important; }
+  .person-info .btn-1 {padding: 0px 0px !important;letter-spacing: 0px !important;}
+  .person-info .btn-2 {padding: 0px 0px !important;letter-spacing: 0px;}
+
+  /* General Css */
+  .expertise h3,.education h3,.experiance h3,.portfolio h3,.testimonial h3,.blog h3,.contact h3,.my-intrest h3,.pricing-card h3,.about h3,.services h3{font-size: 20px;}
+  .about p,.services p,.expertise p,.education p,.experiance p,.portfolio p,.testimonial p,.blog p,.contact p,.my-intrest p,.pricing-card p{font-size: 14px;}
+
+  /* Portfolio */
+  .filter-button {font-size: 9.6px;}
+
+  /* Blog */
+  .blog .blog-content .tags li {font-size: 10px;padding: 10px 0px 0px 5px;  }
+  .blog .blog-content h4 {font-size: 15px;}
+  .blog .blog-content .second-1p,.blog .blog-content .second-2p {font-size: 10px !important;}
+  
+  /* Testinomial */
+  .testimonial-content p {font-size: 11px;}
+  
+  /* Contact */
+  .contact-form .contact-btn {font-size: 14px;letter-spacing: 0px;}
+  .contact-details span{font-size: 15px;}
+  .contact-details p{font-size: 12px;}
+  
+  /* Footer */
+  .main-footer ul li {margin: 0%;padding: 0%;}
+  .main-footer ul li {padding: 0px 07px !important;}
+  .social-media-handle li {padding: 0px 10px 0px 0px !important;}
+}
+
+
+/* Custom Styling */
+@media (min-width:1200px) and (max-width:1400px){html,body{width: 100% !important;height: 100% !important;margin: 0px !important;padding: 0px !important;overflow-x: hidden !important; }}
+@media (max-width: 1020px) {.custom-row p:first-child {padding: 10px 0px 0px 25px;}}
+@media (max-width:1550px){body{overflow-x: hidden !important;}}

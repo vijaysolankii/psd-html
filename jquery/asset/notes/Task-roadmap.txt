@@ -1,0 +1,34 @@
+i want to start work on the Bx Slided.
+    what i can expect from this.
+        1. made fully functional slider.
+        2. Then i will include bx slider into the documenting style same as bx slider.
+
+Estimation: there are total 6 videos (30min-Watching + 30min-implementing) + documentation (1hr) = 2hr.
+
+
+
+i want to start work on accordion.
+    -> simply repeat your previous examples with good understanding = 30Min.
+    -> record video = 30Min.
+
+i want to start work on Calc.
+    => Requirement
+        - environment will be JS with pure oop approach.
+        - go through some basic examples.
+
+    => Development.
+        whatever you start, Start from your side be honest.
+        go through some articles and videos.
+
+    => Time Estimation = 4Hrs => (
+        1hr->designing,
+        1hr->logic write,
+        2hr->debugging 
+    )
+
+i want to start working on Form data rendering/Display
+    => debug and find errors and solve it.
+        -> textarea & images data not rendering.
+        -> validation is not working on images..
+
+    => Time Estimation = 1hr

@@ -1,0 +1,37 @@
+NOTE: Whatever you went to do do it right now. 
+
+Changes in Mongolia v2
+
+	
+	
+	
+
+
+Done:
+	0. changes in footer reduce padding between about and services.
+	1. changes in about page change in peregraph provide some spacing between words and sentances and give some 		   padding right and make image more small.
+	2. change in index page seperate the menu bar and hero section.
+	3. changes in services page make change in middle section of page services.
+	4. use hover on header and add active page class to that page
+
+
+Road Map to complete all the Excersize.
+	-> Mongolia-v2
+		1. Complete the menu procedure on Mongolia-v2
+			- include all pages.
+		2. check the entire Mongolia-v2 is there any issue or not if there is any issue please solve it 
+			-major change in 421 to 600.
+
+	-> Complete before 11:20
+
+	-> Meraki 
+		1. Add animation on menu button event and add the aos library.
+		2. change the position of the person in banner.
+		3. change the size of the testinomial image.
+		4. Change in the menu bar closing and opening problem.
+
+	-> ImageNative
+		1. Add your custome after and before values to the h3 element.
+		2. change in mobile view.
+		3. changes in header menu and dropdown menu for after and before.
+		4. changes in banner in middle of the ImageNative.

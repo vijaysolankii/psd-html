@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mongolia - About</title>
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap 4 -->
+    <link type="text/css" href="./assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" rel="stylesheet">
+    <link type="text/css" href="./assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="my_nav" id="myNav" data-aos="fade-up">
+        <div class="container-1">
+            <a class="nav-item" href="about.html"> About</a>
+            <a class="nav-item " href="services.html"> Service</a>
+            <a class="nav-item" href="index.html"> <img src="./assets/img/home/menu-logo.png" class="img-fluid"
+                    alt="menu-logo"></a>
+            <a class="nav-item" href="portfolio.html"> Portfolio</a>
+            <a class="nav-item" href="contact.html"> Contact</a></div>
+    </header><!-- Header Ended -->
+
+    <div id="myNav" class="overlay" style="">
+        <a href="index.html" style="pointer-events: all;"><img class="openImgNav img-fluid" src="./assets/img/home/menu-logo-f.png"
+                alt=""></a>
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">close</a>
+        <div class="overlay-content">
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+            <div class="contact-details container">
+                <span>Contact</span>
+                <a class="contactN" href="tel:407-341-5446">407-341-5446</a>
+                <span>Email</span>
+                <a href="mailto:ksmith@mangoliyagray.com">ksmith@mangoliyagray.com</a>
+            </div>
+        </div>
+    </div>
+    <a href="index.html" style="pointer-events: all;"><img class="openImgNav img-fluid" src="./assets/img/home/menu-logo.png" alt=""></a>
+    <p class="span" style="cursor: pointer; pointer-events: all !important;" onclick="openNav()">Menu</p>
+     <!-- Mobile NavBar Ended -->
+
+    <section class="hero hero-404" data-aos="fade-up" data-aos-anchor-placement="center-center">
+        <div class="container">
+            <div class="hero-content content-404">
+                <h1 data-aos="fade-right">404 - Not Found.</h1>
+            </div>
+        </div>
+    </section> <!-- Hero Ended -->
+
+    <section class="main-text main-intro">
+        <div class="container">
+            <center>
+                <img data-aos="fade-right" data-aos-duration="1500" class="img-fluid custom-img"
+                    src="./assets/img/404/404.png" alt="404.png">
+            </center>
+            <p class="text-center" data-aos="fade-left" data-aos-duration="1500">
+                Please follow one of the links above or hit the back button on your browser to return.
+            </p>
+        </div>
+    </section>
+    <!-- Body Content Start -->
+
+    <footer>
+        <div class="custom-container">
+            <div class="main-footer">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="#">
+                            <img src="./assets/img/Home-1/footer_img.png" class="footer_img img-fluid" alt="footer_img">
+                        </a>
+                    </div>
+                    <div class="col-md-7 text-center">
+                        <p><a href="tel:4073415446">407-341-5446</a></p>
+                        <p><a href="mailto:ksmith@mongoliagray.com">ksmith@mongoliagray.com</a></p>
+                    </div>
+                    <ul class="col-md-1 footer_menu" style="padding: 0% !important;">
+                        <li class="footer_links"><a href="about.html">About</a></li>
+                        <li class="footer_links"><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                    <ul class="col-md-1 footer_menu" style="padding: 0 15px 0 0 !important;">
+                        <li class="footer_links"><a href="services.html">Service</a></li>
+                        <li class="footer_links"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="secondry-footer">
+                <div class="row">
+                    <div class="design col-md-3">
+                        <span>Designed By Bigeye</span>
+                        <span>Copyright 2020</span>
+                    </div>
+                    <div class="copyright col-md-5">
+                        <span>Copyright 2020</span>
+                    </div>
+                    <div class="footer_links col-md-4">
+                        <span><a href="terms-conditions.html">Terms Conditions</a></span>
+                        <span><a href="privacy-policy.html">Privacy Policy</a></span>
+                    </div>
+                </div>
+            </div>
+    </footer> <!-- Footer Ends -->
+
+    <!-- Bootstrap 4 -->
+    <script type="text/js" src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script type="text/js" src="./assets/js/bootstrap.min.js"></script>
+    <!-- <script type="text/js" src="./assets/js/popper.min.js"></script> -->
+    <script src="./assets/js/aos.js"></script>
+    <script type="text/js" src="./assets/js/main.js"></script>
+    <script>
+        function openNav() {document.getElementById("myNav").style.width = "100%";}
+        function closeNav() {document.getElementById("myNav").style.width = "0%";}
+        AOS.init();
+    </script>
+</body>
+
+</html>

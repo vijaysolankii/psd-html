@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc - OOP</title>
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+
+<body>
+
+     <section class="my-calc">
+        <div class="container">
+            <h1 style="text-align: center;text-transform: uppercase;color: #f08080;">calculator-1</h1>
+            <p style="text-align: center;text-transform: uppercase;color: #f08080;">Using Core JS</p>
+            <div id="calculator">
+                <div class="result">
+                    <div id="history">
+                        <p id="history-value"></p>
+                    </div>
+                    <div id="output">
+                        <p id="output-value"></p>
+                    </div>
+                </div>
+                <div class="keyboard">
+                    <button id="clear" class="operator">C</button>
+                    <button id="backspace" class="operator">CE</button>
+                    <button id="%" class="operator">%</button>
+                    <button id="/" class="operator">&#247</button>
+
+                    <button id="7" class="number">7</button>
+                    <button id="8" class="number">8</button>
+                    <button id="9" class="number">9</button>
+                    <button id="*" class="operator">*</button>
+
+                    <button id="4" class="number">4</button>
+                    <button id="5" class="number">5</button>
+                    <button id="6" class="number">6</button>
+                    <button id="-" class="operator">-</button>
+
+                    <button id="1" class="number">1</button>
+                    <button id="2" class="number">2</button>
+                    <button id="3" class="number">3</button>
+                    <button id="+" class="operator">+</button>
+
+                    <button id="empty" class="empty"></button>
+                    <button id="0" class="number">0</button>
+                    <button id="empty" class="empty"></button>
+                    <button id="=" class="operator">=</button>
+
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <div class="calculator-grid">
+        <h2 style="text-align: center !important;color: #fff;display: block !important;margin: 0 auto !important;">CALC_USING_OOP</h2>
+        <div class="output">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+        </div>
+
+        <!-- row-1 -->
+        <button data-all-clear class="span-2">AC</button>
+        <button data-delete>DEL</button>
+        <button data-operation>/</button>
+
+        <!-- row-2 -->
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation>*</button>
+
+        <!-- row-3 -->
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>-</button>
+
+        <!-- row-4 -->
+        <button data-number>3</button>
+        <button data-number>2</button>
+        <button data-number>1</button>
+        <button data-operation>+</button>
+
+        <!-- row-5 -->
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-equals class="span-2">=</button>
+    </div>
+
+    <script src="./asset/js/jquery.min.js"></script>
+    <script src="./asset/js/bootstrap.min.js"></script>
+    <script src="./asset/js/calc.js"></script>
+</body>
+</html>

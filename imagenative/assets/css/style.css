@@ -1,0 +1,138 @@
+/* Styling  */
+@font-face {font-family: 'Georgia';src: url('../fonts/Georgia-Bold.eot');src: url('../fonts/sGeorgia.eot?#iefix') format('embedded-opentype'),url('../fonts/Georgia-Bold.woff') format('woff'),url('../fonts/Georgia.woff2') format('woff2'),url('../fonts/Georgia.ttf') format('truetype'),url('../fonts/Georgia.svg#Georgia') format('svg');font-weight: normal;font-style: normal;font-display: swap;}
+
+* {margin: 0% !important;padding: 0;box-sizing: border-box;}
+body {width: 100%;height: 100%;margin: 0px;padding: 0px;overflow-x: hidden; font-family: "Georgia", sans-serif;background-color: #fff;}
+.container {max-width: 100% !important;padding: 0px 15px !important;}
+
+/* ==================================================
+                    ImageNative Css
+================================================== */
+
+.first-toggle-sh-menu {padding:  0px 0px 0px 5px !important ;background-color: #fff;border-bottom: 2px solid #97455f;}
+.first-toggle-sh-menu .tags{display: inline-block;}
+.first-toggle-sh-menu .menu {display: inline-block;}
+.first-toggle-sh-menu .tags{padding: 10px;}
+.first-toggle-sh-menu .menu{padding: 10px;float:right;}
+.first-toggle-sh-menu .tags li {display: inline-block;background-color: #d2d2d2;border-radius: 25px;padding: 0px;margin: 0 0px 0 5px !important;}
+.first-toggle-sh-menu .tags li:first-child{margin: 0% !important;}
+.first-toggle-sh-menu .tags li a {color: #fff !important;font-family: "Georgia", sans-serif;  }
+.first-toggle-sh-menu .tags li a:hover,
+.first-toggle-sh-menu .tags li a i:hover {color: #fff !important;}
+.first-toggle-sh-menu .tags li:nth-child(1):hover {background-color: #0e76a8;}
+.first-toggle-sh-menu .tags li:nth-child(2):hover {background-color: #00acee;}
+.first-toggle-sh-menu .tags li:nth-child(3):hover {background-color: #e60023;}
+.first-toggle-sh-menu .tags li:nth-child(4):hover {background-color: #db4a39;}
+.first-toggle-sh-menu .tags li:nth-child(5):hover {background-color: #ee802f;}
+.first-toggle-sh-menu .tags li a i {width: 30px;height: 30px;text-align: center;line-height: 30px;}
+
+.card {position: relative;display: -ms-flexbox;display: flex;-ms-flex-direction: column;flex-direction: column;min-width: 0;word-wrap: break-word;border: none !important;border-radius: 0% !important;background-color: #fff;background-clip: border-box;}
+.card-header{display: block;text-align: right;}
+.card-body {padding: 0 !important;}
+.card-header .my-btn{position: absolute;top: 0px;font-weight: bolder;font-size: 20px;right: 15px;padding: 0 10px ;background-color: #97455f;box-shadow: none;border-radius: 0px 0px 5px 5px;color: #fff !important;}
+.card-header .my-btn:focus{box-shadow: none;}
+.card-header .my-btn:hover{color: #fff;background-color: #97455f;border: none !important;box-shadow: none !important;text-decoration: none !important;}
+.card-header:first-child {border-radius:  0% !important;}
+.card-header {padding: 0% !important;margin-bottom: 0% !important ;background-color:#d2d2d2 !important;border-bottom: none !important;}
+
+.menu li {display: inline-block;padding: 0px 5px 0 5px;}
+.menu li a {color: #97455f;line-height: 32px;}
+.menu li:nth-child(1):before{border: none;}
+.menu li:nth-child(4):after,.menu li:nth-child(2):after,.menu li:nth-child(3):after{/* position: absolute !important; *//* bottom: 15px !important; *//* margin: 0 0 0 -8px !important; *//* content: '' !important; *//* height: 20px !important; *//* width: 100px !important; *//* border-left: 2px solid #97455f; *//* pointer-events: all; */}
+
+.head-text h1 {text-transform: uppercase;font-family: 'Georgia';font-size: 30px;}
+.head-text h1::first-letter {font-size: 50px !important;text-transform: uppercase;font-family: 'Georgia';position: absolute;}
+.head-text h1::after{top: 62px;margin: 0px 0px 0 10px;position: absolute;content: '';height: 40px !important;width: 100px !important;border-left: 1px solid #a1a1a1;}
+
+.second-text {padding: 5px 0px 0px 15px !important;font-family: "Georgia", sans-serif;color: #9e9e9e;}
+.second-logo-menu {padding: 50px 0 150px 0px;background-color: #d2d2d2;position: relative;}
+
+.form-inline .btn:focus,.form-inline .form-control:focus{box-shadow: none;}
+.form-inline {padding: 10px 0px 0px 0px;}
+.form-inline .form-control {border-radius: 0.25rem 0rem 0rem 0.25rem;border-color: #97455f;}
+.form-inline ::placeholder{font-family: "Georgia", sans-serif;}
+.form-inline .btn {border-radius: 0rem 0.25rem 0.25rem 0rem;border: 1px thin #97455f;background-color: #97455f;color: #fff;font-family: 'Georgia';}
+.form-inline .custom-btn{margin: 10px 0px 10px 10px !important;border-radius: 0%;padding: 0%;display: none;}
+.form-inline .btn:hover {background-color: #97455f;border: none;color: #fff;}
+
+.menu-bar {background-color: #97455f;border-radius: 5px 5px 0px 0px;margin: auto 0;position: relative;bottom: 110px;}
+.menu-bar nav {padding: 0%;margin: 0%;}
+.menu-bar .nav-item .nav-link {color: #fff !important;padding: 10px 15px;font-family: "Georgia", sans-serif;}
+.menu-bar .nav-item .nav-link:hover {color: #d2d2d2;background-color: #6a3144;}
+.menu-bar .nav-item .nav-link:first-child:hover {/* border-radius: 5px 0px 0px 5px; */}
+.menu-bar .nav-item .nav-link:hover {border-radius: 0px;}
+.navbar-expand-lg .navbar-collapse{line-height: 30px;}
+
+.carousel {padding: 30px 25px 30px 25px;position: relative;bottom: 110px;background-color: #fff;border-radius: 0px;}
+.carousel-item{height: 350px !important;}
+.my_carousel .carousel-caption {position: absolute;/* right: 1% !important; */bottom: 25px !important;left: 59%;z-index: 10;padding: 20px;color: #fff;text-align:left;width: 40%;color: #000;}
+.my_carousel .carousel-caption h1{font-family: "Georgia", sans-serif !important;}
+.my_carousel .carousel-caption p{font-size: 18px;font-family: "Georgia", sans-serif !important;}
+.my_carousel .carousel-inner .carousel-item .carousel-caption{font-family: "Georgia", sans-serif;}
+.carousel-indicators > li.active {background-color: transparent !important;border: 2.5px solid #000 !important;}
+.carousel-indicators li {background-color: #000 !important;height: 12px !important;width: 12px !important;border-radius: 20px !important;margin: 0 4px !important;border: 2px solid #000 !important;}
+.my_carousel .carousel-caption{background-color: #9a9a9a;}
+
+.blog-list {margin:-45px 0px 70px 0px !important;position: relative;width: 100% !important;display: inline-block;padding: 0 30px 0 30px;}
+.blog-list .list {padding:0px 0px 0px 0px !important}
+
+.blog-list h3 {margin: -0.95em auto -0.45em;overflow: hidden;text-align: center;padding: 0px 0px 50px 0px;line-height: 1.2em;position: relative;text-transform: uppercase;font-weight: 400;font-family: "Georgia", sans-serif;}
+.blog-list h3:before,
+.blog-list h3:after {content: "";vertical-align: super;display: inline-block !important;width: 38.3% !important;height: 0.65rem !important;border-bottom: 5px solid #d2d2d2 !important;margin: 0 2% 0 -55% !important;}
+.blog-list h3:after {margin: 0 -55% 0 2% !important;}
+.blog-list .list .col-md-9{padding: 0%;}
+.blog-list .list span {color: #97455f;text-transform: capitalize;font-size: 18px;font-family: 'Georgia';}
+.blog-list .list p {padding:10px 0px 0px 0px;font-family: 'Georgia';}
+
+.row-1 {padding: 0px 0px 30px 0px;}
+.row-2{padding: 0%;}
+
+.detail {margin: 0px 0px 0px 0px !important;position: relative;width: 100% !important;display: inline-block;}
+.detail h3:before,
+.detail h3:after {content: "";vertical-align: super;display: inline-block !important;width: 30% !important;height: 0.65rem !important;border-bottom: 5px solid #d2d2d2 !important;margin: 0px 0% -4px 2%  !important;}
+.detail h3:after {margin: 0 0% -4px 1% !important;}
+.detail h3{font-family: "Georgia", sans-serif;display: block !important;margin: 0 auto !important;text-transform: uppercase;}
+.detail .list .detail-img {padding: 25px 0px 0px 0px !important;}
+.detail .list .col-md-12{padding: 0% !important;}
+.detail .list .text {position: relative;color: #000;text-transform: capitalize;top: 25px;left: 15px;font-size: 20px !important;font-family: "Georgia", sans-serif;}
+.detail .list p {padding: 30px 0px 5px 15px;font-size: 18px;font-family: "Georgia", sans-serif;color: #d2d2d2;}
+.detail .list a {color: #97455f;text-decoration: none;font-size: 15px;padding: 0% !important;font-family: "Georgia", sans-serif;padding: 0 0 0 15px !important;}
+
+.testinomial img {padding: 30px 0px 0px 0px;}
+.testinomial h5 {font-size: 20px !important;padding: 27px 0px 0px 10px;font-family: "Georgia", sans-serif;}
+.testinomial a {color: #97455f !important;text-decoration: none !important;font-size: 16px !important;padding: 30px 0px 0px 10px !important;font-family: "Georgia", sans-serif;}
+.testinomial-content {color: #d2d2d2;padding: 10px 0px 0px 0px;font-size: 18px;font-family: "Georgia", sans-serif;font-weight: 200 !important;}
+
+.contact-bn {background-color: #97455f;border-radius: 5px;padding: 20px 0px 20px 20px;margin: 40px 10px 80px 15px !important;}
+.contact-bn .col-md-4{margin: 0 auto;text-align: center;}
+.contact-bn .col-md-7{padding:0px 0px 0px 0px;}
+.contact-bn p {color: #fff;font-family: "Georgia", sans-serif;font-size: 30px;}
+.contact-bn .col-md-4 {margin: auto 0 !important;text-align: center;display: block !important;}
+.contact-bn h1{font-weight: 400;color: #fff;font-family: "Georgia", sans-serif;font-weight: 200;font-size: 61px;}
+.contact-bn .btn{box-shadow: none;font-size: 40px !important; background-color: #ffffff;color: #97455f;text-transform: uppercase;border-radius: 10px;font-family: "Georgia", sans-serif;margin: 10px 0px !important;}
+.contact-bn  .btn:hover{box-shadow: none;color: #000;}
+
+
+.contact{margin: 0px 0px !important;border-top: 4px solid #d2d2d2;background-color: #ebebeb;}
+.contact .blog-listing span{padding: 20px 20px;font-size: 25px;text-transform: capitalize;position: relative;top: 20px;left: 8px;font-family: "Georgia", sans-serif;}
+.contact .blog-content{padding: 50px 15px 15px 15px;}
+.contact .blog-content .col-md-9{padding: 0 15px 0 0 !important;}
+.contact .blog-content img{border: 5px solid #d2d2d2;}
+.contact .blog-content h4{font-size: 20px;color: #97455f;font-weight: 400;font-family: "Georgia", sans-serif;}
+.contact .blog-content p{padding: 10px 0px 0px 0px ;font-size: 15px;color: #9a9a9a;font-weight: 400;font-family: "Georgia", sans-serif;}
+.contact .company-data span{padding: 20px 0px;font-size: 25px;text-transform: capitalize;position: relative;top: 20px;left: 8px;font-family: "Georgia", sans-serif;}
+.contact .company-address{list-style-type: none;padding: 40px 0px 0px 0px;}
+.contact .company-address p,.contact .company-contact p,.contact .company-office-timing p{color: #9a9a9a;padding-left: 10px;font-family: "Georgia", sans-serif;}
+.contact .company-contact p a {color: #9a9a9a;text-decoration: none;font-family: "Georgia", sans-serif;}
+.contact .company-contact p a:hover{transition-delay: 0.3s;color: #000;font-family: "Georgia", sans-serif;}
+.contact .company-contact,.contact .company-office-timing{padding: 20px 0px 0px 0px;}
+.contact .company-office-timing h5{font-weight: bold;padding: 0px 0px 0px 10px;color: #9a9a9a;font-family: "Georgia", sans-serif;}
+
+.user-form span{padding: 20px 0px;font-size: 25px;text-transform: capitalize;position: relative;top: 20px;left: 8px;font-family: "Georgia", sans-serif;}
+.user-form .form-data{padding: 40px 0px 0px 10px;}
+.user-form .form-data p {margin-bottom: 20px !important;font-family: "Georgia", sans-serif;}
+.user-form .form-data .btn{padding: 10px;letter-spacing: 2px;background-color: #97455f;text-transform: uppercase;font-weight: bold;color: #fff;font-family: "Georgia", sans-serif;border-radius: 10px;}
+
+footer{background-color: #ebebeb;border-top: 2px solid #f9f9f9;padding: 10px 0px;}
+footer span{color: #919191;font-family: 'Georgia';}
+footer span:last-child{float: right;}

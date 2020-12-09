@@ -1,0 +1,155 @@
+Meraki:
+    Poppins
+    Poppins Medium
+    Poppins Regular
+    OpenSans Bold
+    Poppins Semibold
+    Gotham RoundedBook
+
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+color:
+    1. header color : #23303e
+    2. banner-bg color : #343944
+        2.1 innner intro 
+            -> upper border-color : #07cb79
+            -> header-color : #333333
+            -> secondry-color : #07cb79
+            -> p-color: #c2c2c2
+            -> btn color: #8c8c8c
+            -> border-color: #8c8c8c
+            -> innner text: #c2c2c2
+
+    
+    social-logos-color: #c2c2c2
+    main-header-color:   #333333
+    secondry-header-color: #8c8c8c
+    
+
+Notes:
+ Start and Collect all the resources (img,font-size,font-femily,coloring schema).
+
+0. 
+1. Header: there is live animation for each bookmark_page need to use css effect or simple jquery or js.
+
+2. banner: 
+   2.1 -> simple background image.
+   2.2 -> upper layer has about me section.
+            => Which has user-image | about user | 2 buttons 
+
+3. Simple about me Section
+    3.1 -> Should contain good social-handle.
+
+4. cards 
+    4.1 -> i have to use the :hover property to hover card with shadow.
+
+5. live loaders
+    5.1 -> use live loader from getbootstrap and w3School.
+
+6. Education & Experiance
+    6.1 -> you have to use the block-box with left border | with pure white coloring
+
+7. my intrest
+    7.1 -> use the card with hover with animation.
+
+8. My portfolio
+    8.1 -> use the animated filtering using card and hover property.
+
+9. pricing plan
+    9.1 -> make hover animation with coloring.
+    9.2 -> Border Bottom
+
+10. use the carousel
+    10.1 -> with animated and left side dots.
+
+11. Blog
+    11.1 -> blog details have to be overlay to blog image
+
+12. contact
+    12.1 -> contact form
+    12.2 -> card    
+            => google_map api
+            => contact details      
+
+
+Note:3 ,s9/s9+
+    -> about image problem.
+    -> 
+
+iPad:
+    -> resolution is not loading properly.
+    
+pixel 2-xl/2,
+nexus-7/6p/10/, 
+LG optimus L70,
+Kindle Fire HDX Stick,
+iPhone Xs-Max/6/7/8  -> perfect.
+ 
+
+======================= Chrome ======================= 
+
+Laptop with MDPI -> perfect
+Laptop with HiDPi -> perfect
+
+Moto G4 -> Everything is perfect except the about hero image.
+nexus-10/4/5/5x/6/6p/ -> perfect
+iPad/iPad Mini -> problem due to ml-auto and i can't override col-md-7
+iPhone 4/5/5-SE/iPad-pro ->perfect
+Surface-duo -> perfect
+Galaxy 5s -> about image problem and my services-card image margin left 10/right 20.
+pixel 2/2-xl/
+
+320/420/556/992/1200 px -> perfect
+768px -> problem header-banner there is ml-auto class remove this and 
+      -> there is problem in about-img manage paddding in right side 
+      -> contact sadik multani for changes.
+            ex -> if i made changes in x file how to merge that file in sector-7.
+ 
+
+Contact Sadik Multani for git update.
+read git crash course pdf 
+make better changes in mereki project.
+
+
+change in banner 
+
+
+Major problem in menu bar and background image
+
+Changes in 1200,1020 
+    my-services changes in cards
+    my-education,blog,contact,my-experiance,pricing-card 
+        -> key , -> paddding
+    changes in blog section image and icons
+    testinomial changes for content padding
+===============Done ABove=============================
+
+
+changes in 768px to 991px
+
+Changes in 992:
+    changes in testinomial 
+    padding for title (h3,p)
+    changes in blog section image and icons
+
+
+Changes in (769px to 991px):
+    for major header,person-image
+    changes in padding
+    changes in blog section image and icons
+
+
+
+993 to 1199 for custom-testimonial error.
+
+
+Talking with SM:
+    1. z index for menu bar :-D
+    2. textarea reduce using row :-D
+    3. changes in map for + - sign : waiting
+    4. manage pricing card and service card
+    5. menu hover link before and after
+    6. margin and text align for about img
+    7. carousel changes in testinomial     

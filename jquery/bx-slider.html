@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bx-Slider | jQuery</title>
+
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Model-1 for Slider-1 -->
+    <button type="button" class="btn modelX" data-toggle="modal" data-target="#model-1">
+        Plugin-1 Installation
+    </button>
+
+    <!-- Model Data for slider-2 -->
+    <div class="modal fade" id="model-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Installation Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <button class="tablink" onclick="openPage('html', this, 'grey')">HTML</button>
+                    <button class="tablink" onclick="openPage('css', this, 'grey')" id="defaultOpen">CSS</button>
+                    <button class="tablink" onclick="openPage('js', this, 'grey')">JavaScript</button>
+
+                    <div id="html" class="tabcontent">
+                        <h3>HTML</h3>
+                        <pre>
+                            <p  style="margin-left: -230px;">
+                                &ltdiv class="slider"&gt
+                                    &ltdiv class="slides"&gt
+                                        &ltimg class="img-fluid bx-1" src="asset/img/1.jpg" alt="bx-1"&gt
+                                        &lth2&gtI am 1 slide.&lt/h2&gt
+                                    &lt/div&gt
+                                    &ltdiv class="slides"&gt
+                                        &ltimg class="img-fluid bx-2" src="asset/img/3.jpg" alt="bx-3"&gt
+                                        &lth2&gtI am 2 slide.&lt/h2&gt
+                                    &lt/div&gt
+                                    &ltdiv class="slides"&gt
+                                       &ltimg class="img-fluid bx-2" src="asset/img/2.jpg" alt="bx-2"&gt
+                                       &lth2&gtI am 2 slide.&lt/h2&gt
+                                    &lt/div&gt
+                                    &ltdiv class="slides"&gt
+                                        &ltimg class="img-fluid bx-2" src="asset/img/1.jpg" alt="bx-1"&gt
+                                        &lth2&gtI am 2 slide.&lt/h2&gt
+                                    &lt/div&gt
+                                    &ltdiv class="slides"&gt
+                                        &ltimg class="img-fluid bx-2" src="asset/img/3.jpg" alt="bx-2"&gt
+                                        &lth2&gtI am 2 slide.&lt/h2&gt
+                                    &lt/div&gt
+                                    &ltdiv class="slides"&gt
+                                        &ltimg class="img-fluid bx-2" src="asset/img/3.jpg" alt="bx-2"&gt
+                                        &lth2&gtI am 2 slide.&lt/h2&gt
+                                    &lt/div&gt
+                                &lt/div&gt <!-- Slider-1 --> 
+                            </p>
+                        </pre>
+                    </div>
+                    <div id="css" class="tabcontent">
+                        <h3>CSS</h3>
+                        <pre>
+                            <p style="margin-left: -200px;">
+                            .slider .slides img{height: 500px !important;width: 100%;}
+                            .tablink {background-color: #555;color: white;float: left;border: none;outline: none;cursor: pointer;padding: 14px 16px;font-size: 17px;width: 33%;}
+                            .tablink:hover {background-color: #777;}
+                            .tabcontent {color: #000;display: none;padding: 100px 20px;height: 100%;}
+
+                            #Home {background-color: #fef;}
+                            #News {background-color: #fef;}
+                            #Contact {background-color: #fef;}
+                            #About {background-color: #fef;}
+                        </p>
+                        </pre>
+                    </div>
+                    <div id="js" class="tabcontent">
+                        <h3>JavaScript</h3>
+                        <pre>
+                            <p style="margin-left: -230px;">
+                                var slSlider = $("#slider-area").bxSlider({
+                                    auto:false,
+                                    onSlideAfter:function(){
+                                        slSlider.startAuto();
+                                    }
+                                });
+                            </p>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Model Data for slider-2 -->
+    <div class="modal fade" id="model-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Installation Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">HTML</button>
+                        <button class="tablinks" onclick="openCity(event, 'Paris')">CSS</button>
+                        <button class="tablinks" onclick="openCity(event, 'Tokyo')">JavaScript</button>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div id="London" class="tabcontent">
+                        <h3>HTML</h3>
+                        <pre>
+                            <p style="margin-left: -245px;">
+                                &ltdiv class="wrapper"&gt
+                                    &ltul id="slider-area-1"&gt
+                                        &ltli&gt &ltimg class="img-fluid" src="asset/img/1.jpg" alt=""&gt &lt/li&gt
+                                        &ltli&gt &ltimg class="img-fluid" src="asset/img/2.jpg" alt=""&gt &lt/li&gt
+                                        &ltli&gt &ltimg class="img-fluid" src="asset/img/3.jpg" alt=""&gt &lt/li&gt
+                                        &ltli&gt &ltimg class="img-fluid" src="asset/img/2.jpg" alt=""&gt &lt/li&gt
+                                        &ltli&gt &ltimg class="img-fluid" src="asset/img/1.jpg" alt=""&gt &lt/li&gt
+                                        &ltli&gt &ltimg class="img-fluid" src="asset/img/2.jpg" alt=""&gt &lt/li&gt
+                                        &ltli&gt &ltimg class="img-fluid" src="asset/img/3.jpg" alt=""&gt &lt/li&gt
+                                    &lt/ul&gt
+                                &lt/div&gt
+                                
+                            </p>
+                        </pre>
+                    </div>
+
+                    <div id="Paris" class="tabcontent">
+                        <h3>CSS</h3>
+                        <pre>
+                            <p style="margin-left: -245px;">
+                                .wrapper .Plugin-2{
+                                    border: 1px solid;
+                                    background-color: transparent;
+                                    outline: none;padding: 10px;color: #fff;
+                                    background: #9D62CE;
+                                    font-family: monospace;
+                                    text-transform: capitalize;
+                                    font-size: 25px;
+                                    background: -moz-linear-gradient(left, #9D62CE 0%, #A42C8F 75%, #C51D8C 100%);
+                                    background: -webkit-linear-gradient(left, #9D62CE 0%, #A42C8F 75%, #C51D8C 100%);
+                                    background: linear-gradient(to right, #9D62CE 0%, #A42C8F 75%, #C51D8C 100%);
+                                }
+                                .wrapper .Plugin-2:hover{
+                                    color: black;
+                                     background: #C51D8C;
+                                    transition: .01s ease-in;
+                                    background: -moz-linear-gradient(right, #9D62CE 0%, #A42C8F 75%, #C51D8C 100%);
+                                    background: -webkit-linear-gradient(right #9D62CE 0%, #A42C8F 75%, #C51D8C 100%);
+                                    background: linear-gradient(to left #9D62CE 0%, #A42C8F 75%, #C51D8C 100%);
+                                }
+
+                            </p>
+                        </pre>
+                    </div>
+
+                    <div id="Tokyo" class="tabcontent">
+                        <h3>JavaScript</h3>
+                        <pre>
+                            <p style="margin-left: -245px;">
+                                // Slider-2 | Js
+                                $("#slider-area-1").bxSlider({
+                                    slideMargin: 5,
+                                    speed: 30000,
+                                    ticker: true,
+                                    minSlides: 3,
+                                    maxSlides: 10,
+                                    slideWidth: 300
+                                });
+                                
+                            </p>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Model Data for slider-3 -->
+    <div class="modal fade" id="model-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Installation Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body">
+                        
+                        <!-- Tab content -->
+                        
+                            <h3>HTML</h3>
+                            <pre>
+                                <p style="margin-left: -245px;">
+                                   &ltiv class="wrapper-1"&gt
+                                        &ltul id="slider-area"&gt
+                                            &ltli class="bx" style="background: url('./asset/img/1.jpg');"&gt
+                                                &lth2&gtDesigner&lt/h2&gt
+                                            &lt/li&gt
+                                            &ltli class="bx" style="background: url('./asset/img/2.jpg');"&gt
+                                                &lth2&gtDeveloper&lt/h2&gt
+                                            &lt/li&gt
+                                            &ltli class="bx" style="background: url('./asset/img/3.jpg');"&gt
+                                                &lth2&gtBuisness&lt/h2&gt
+                                            &lt/li&gt
+                                        &lt/ul&gt
+                                    &lt/div&gt
+                                </p>
+                            </pre>
+                     
+
+                       
+                            <h3>CSS</h3>
+                            <pre>
+                                <p style="margin-left: -245px;">
+                                    .wrapper-1{position: relative;}
+                                    .wrapper-1 .bx-viewport{max-height: 800px !important;}
+                                    .wrapper-1 #slider-area .bx {background-size: cover !important;}
+                                    .wrapper-1 .bx-wrapper {margin: 0% !important;}
+                                    #slider-area li{height: 100vh;background-size: cover;background-position: center center;-webkit-background-size: cover}
+                                    #slider-area li h2{position: absolute;left: 50%; top: 50%;transform: translate(-50%,-35%);font-family: monospace;font-size: 60px;margin: 0; color: #fff;}
+                                </p>
+                            </pre>
+                        
+
+                       
+                            <h3>JavaScript</h3>
+                            <pre>
+                                <p style="margin-left: -245px;">
+                                    // Slider-2 | Js
+                                    $(function () {
+                                        $("#slider-area").bxSlider({
+                                            mode: "fade",
+                                            speed: 2000,
+                                            pause: 2000,
+                                            auto: true,
+                                            pager: false,
+                                            controls: false,
+                                            touchEnabled: false,
+                                        });
+                                    });
+                                    
+                                </p>
+                            </pre>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="slider">
+        <div class="slides">
+            <img class="img-fluid bx-1" src="asset/img/1.jpg" alt="bx-1">
+            <h2>I am 1 slide.</h2>
+        </div>
+        <div class="slides">
+            <img class="img-fluid bx-2" src="asset/img/3.jpg" alt="bx-2">
+            <h2>I am 2 slide.</h2>
+        </div>
+        <div class="slides">
+            <img class="img-fluid bx-3" src="asset/img/2.jpg" alt="bx-3">
+            <h2> I am 3 slide.</h2>
+        </div>
+        <div class="slides">
+            <img class="img-fluid bx-1" src="asset/img/1.jpg" alt="bx-1">
+            <h2>I am 4 slide.</h2>
+        </div>
+        <div class="slides">
+            <img class="img-fluid bx-2" src="asset/img/3.jpg" alt="bx-2">
+            <h2>I am 5 slide.</h2>
+        </div>
+    </div> <!-- Slider-1 -->
+
+    <div class="wrapper">
+        <ul id="slider-area-1">
+            <li> <img class="img-fluid" src="asset/img/1.jpg" alt=""> </li>
+            <li> <img class="img-fluid" src="asset/img/2.jpg" alt=""> </li>
+            <li> <img class="img-fluid" src="asset/img/3.jpg" alt=""> </li>
+            <li> <img class="img-fluid" src="asset/img/2.jpg" alt=""> </li>
+            <li> <img class="img-fluid" src="asset/img/1.jpg" alt=""> </li>
+            <li> <img class="img-fluid" src="asset/img/2.jpg" alt=""> </li>
+            <li> <img class="img-fluid" src="asset/img/3.jpg" alt=""> </li>
+        </ul>
+        <button style="margin: 20px auto;display: block;" type="button" class="Plugin-2" data-toggle="modal"
+            data-target="#model-2">
+            Plugin-2 Installation
+        </button>
+    </div> <!-- Slider-2 -->
+
+    <div class="wrapper-1">
+        <ul id="slider-area">
+            <li class="bx" style="background: url('./asset/img/1.jpg');">
+                <h2>Designer</h2>
+            </li>
+            <li class="bx" style="background: url('./asset/img/2.jpg');">
+                <h2>Developer</h2>
+            </li>
+            <li class="bx" style="background: url('./asset/img/3.jpg');">
+                <h2>Buisness</h2>
+            </li>
+        </ul>
+        <button class="model-3" style="" type="button" class="btn" data-toggle="modal" data-target="#model-3">
+            Plugin-3 Installation
+        </button>
+    </div> <!-- Slider-3 -->
+
+
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="./asset/js/jquery.bxslider.min.js"></script>
+    <script src="./asset/js/bx-slider.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>`

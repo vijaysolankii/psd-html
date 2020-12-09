@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+        body {
+            background-image: url(http://fr.playstation.com/media/5ZfqPjVF/BigSkyInfinity_Hero_EN.JPG);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Open Sans', sans-serif;
+            color: #fff;
+        }
+
+        #content {
+            border: 3px solid green ;
+            border-width: 0 3px;
+            display: inline-block;
+            margin: 50px 0;
+            width: 100%;
+        }
+
+        .divider {
+            font-size: 30px;
+            margin: -0.65em auto -0.45em;
+            overflow: hidden;
+            text-align: center;
+            line-height: 1.2em;
+            background-color: #d3d3d3;
+
+        }
+
+        .divider:before,
+        .divider:after {
+            content: "";
+            vertical-align: top;
+            display: inline-block;
+            width: 50%;
+            height: 0.65em;
+            border-bottom: 3px solid #fff;
+            margin: 0 2% 0 -55%;
+        }
+
+        .divider:after {
+            margin: 0 -55% 0 2%;
+        }
+
+        p {
+            margin: 150px 0;
+            color: #000;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <h1 class="divider">Top title</h1>
+        <p>...Content here...</p>
+        <!-- <h2 class="divider">Bottom title</h2> -->
+    </div>
+</body>
+
+</html>

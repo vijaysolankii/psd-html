@@ -1,0 +1,140 @@
+/* utility classes */
+
+*{margin: 0%;padding: 0%;box-sizing: border-box;}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {margin-bottom: 0rem;font-weight: 0;line-height: 1.8;}
+
+/* Containers */
+.container{padding-right: 15px;padding-left: 15px;margin-right: auto;margin-left: auto;}
+@media (min-width: 768px) {.container {width: 750px;}}
+@media (min-width: 992px) {.container {width: 970px;}}
+@media (min-width: 1200px) {.container {width: 1170px;}}
+
+/* Styling */
+#p1,#p2,#p3,#p4{color: red;}
+
+
+/* -------------------------- Accordion -------------------------- */
+
+.my-accordion .accordion__button{display: block;width: 100%;cursor: pointer;padding: 15px;border: none;outline: none;;text-align: left;}
+.my-accordion .accordion__button::after{content: '\25be';float: right;transform: scale(1.5);}
+
+.my-accordion .accordion__button--active{background-color: #555555;color: #fff;}
+.my-accordion .accordion__button--active::after{content: '\25b4';background-color: #555555;}
+
+.my-accordion .accordion__content{background-color:#eee;overflow: hidden;max-height: 0;padding:0 15px;}
+.my-accordion .accordion__content p{padding: 20px;}
+
+
+.user-form{padding: 20px 0;}
+
+.my-accordion {padding: 0px 0;}
+.my-accordion .collapsible{ margin: 0px 0;width: 100%;border: none;outline: none;padding: 0 15px;transition: .2s ease-in-out;background-color: #f32a12;color: #fff;cursor: pointer;text-align: left;}
+.my-accordion .collapsible::before{content: '\a02b';float: left;}
+.my-accordion .collapsible:hover,.active{background-color: #555;}
+.my-accordion .active::before{content: '\2212';}
+.my-accordion .content{max-height: 0;overflow: hidden;padding: 0 15px; transition: max-height 0.2s ease-out;}
+
+
+
+
+
+/* -------------------------- Bx-Slider -------------------------- */
+
+
+/* Slider-1 */
+.slider h2{text-align: center;font-family: monospace;font-weight: bold;}
+
+/* Slider-1 Installation */
+/* Style tab links */
+.slider .slides img{height: 500px !important;width: 100%;}
+.tablink {background-color: #555;color: white;float: left;border: none;outline: none;cursor: pointer;padding: 14px 16px;font-size: 17px;width: 33%;}
+.tablink:hover {background-color: #777;}
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {color: #000;display: none;padding: 100px 20px;height: 100%;}
+  #Home,#News,#Contact,#About {background-color: #fef;}
+  .modelX{position: absolute;top: 33%;left: 44%;display: block;z-index: 1;height: 45px;margin: auto  !important;text-align: center;background-color: transparent;color: #fd8c04;font-size: 20px;outline: none;background-color: rgba(0,0,0,0.6);padding: 0;font-family: monospace;font-weight: bold;text-transform: uppercase;}
+  .modelX:hover{color: #fff;}
+
+
+
+/* Slider-2 */
+.wrapper .bx-wrapper{border: none;outline: none;left: 0;margin-bottom: 0% !important;}
+.wrapper{width: 100%;}
+
+  /* Slider-2 Installation Plugin */
+  .wrapper .Plugin-2{border: 1px solid;background-color: transparent;outline: none;padding: 10px;color: #fff;background: #9D62CE;font-family: monospace;text-transform: capitalize;font-size: 25px;background: -moz-linear-gradient(left, #9D62CE 0%, #A42C8F 75%, #C51D8C 100%);background: -webkit-linear-gradient(left, #9D62CE 0%, #A42C8F 75%, #C51D8C 100%);background: linear-gradient(to right, #9D62CE 0%, #A42C8F 75%, #C51D8C 100%);}
+  .wrapper .Plugin-2:hover{color: black; background: #C51D8C;transition: .01s ease-in;background: -moz-linear-gradient(right, #9D62CE 0%, #A42C8F 75%, #C51D8C 100%);background: -webkit-linear-gradient(right #9D62CE 0%, #A42C8F 75%, #C51D8C 100%);background: linear-gradient(to left #9D62CE 0%, #A42C8F 75%, #C51D8C 100%);}
+
+/* Slider-3 */
+.wrapper-1{position: relative;}
+.wrapper-1 .bx-viewport{max-height: 800px !important;}
+.wrapper-1 #slider-area .bx {background-size: cover !important;}
+.wrapper-1 .bx-wrapper {margin: 0% !important;}
+#slider-area li{height: 100vh;background-size: cover;background-position: center center;-webkit-background-size: cover}
+#slider-area li h2{position: absolute;left: 50%; top: 50%;transform: translate(-50%,-35%);font-family: monospace;font-size: 60px;margin: 0; color: #fff;}
+
+/* Slider-3 Installation */
+
+.model-3{color: #fff; position: absolute;bottom: 35% !important;left: 0;right: 0;margin-left: auto;margin-right: auto;background: #9D62CE;font-family: monospace;text-transform: capitalize;font-size: 25px;background: -moz-linear-gradient(left, #9D62CE 0%, #A42C8F 75%, #C51D8C 100%);background: -webkit-linear-gradient(left, #9D62CE 0%, #A42C8F 75%, #C51D8C 100%);background: linear-gradient(to right, #9D62CE 0%, #A42C8F 75%, #C51D8C 100%);}
+.model-3:hover{color: black; background: #C51D8C;transition: .01s ease-in;background: -moz-linear-gradient(right, #9D62CE 0%, #A42C8F 75%, #C51D8C 100%);background: -webkit-linear-gradient(right #9D62CE 0%, #A42C8F 75%, #C51D8C 100%);background: linear-gradient(to left #9D62CE 0%, #A42C8F 75%, #C51D8C 100%);}
+
+
+  /* Slider-3 Installation Plugin Css */
+  .tab {overflow: hidden;background-color: #f1f1f1;}
+  /* Style the buttons that are used to open the tab content */
+  .tab button {background-color: inherit;float: left;border: none;outline: none;cursor: pointer;padding: 14px 16px;transition: 0.3s;}
+  /* Change background color of buttons on hover */
+  .tab button:hover {background-color: #ddd;}
+  /* Create an active/current tablink class */
+  .tab button.active {background-color: #ccc;}
+  /* Style the tab content */
+  .tabcontent {display: none;padding: 6px 12px;border: 1px solid #ccc;border-top: none;}
+  
+
+  /* --------------------- Calc-1 --------------------- */
+
+  .my-calc{font-family: 'Open Sans' sans-serif; }
+  .my-calc .container{margin: 20px auto !important;}
+  .my-calc #calculator{height: 550px;width: 320px;background-color: #eaedef;position: relative;margin: 0px auto;top: 0px; border-radius: 5px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
+
+  /* Output Css */
+  .my-calc #calculator .result{height: 150px;}
+  .my-calc #calculator .result #history{text-align: right;height: 20px;margin:  0 20px;padding-top: 20px;font-size: 15px;color: #919191;}
+  .my-calc #calculator .result #output{text-align: right;height: 60px;margin: 30px 20px 20px 20px;font-size: 30px;}
+  
+  /* Keyborad Css */
+  .my-calc #calculator .keyboard{height: 400px;}
+  #calculator .operator,#calculator .number,#calculator .empty{height: 50px;width: 50px;margin: 15px;font-size: 20px; float: left;border-radius: 50%;border-width: 0;font-weight: bold;}
+  #calculator .number,#calculator .empty{background-color: #eaedef;}
+  #calculator .operator,#calculator .number{cursor: pointer;}
+  #calculator .empty{pointer-events: none;}
+  #calculator .operator:active,#calculator .number:active{font-size: 15px;}
+  #calculator .operator:focus,#calculator .number:focus,#calculator .empty:focus{outline: 0;}
+
+  #calculator button:nth-child(1){background-color: #f2f2f2;}
+  #calculator button:nth-child(2){background-color: #f2f2f2;}
+  #calculator button:nth-child(3){background-color: #f2f2f2;}
+
+  #calculator button:nth-child(4){font-size: 25px; padding-bottom: 08px; background-color: #20b2aa;}
+  #calculator button:nth-child(8){font-size: 25px; padding-top: 05px; background-color: #ffa500;}
+  #calculator button:nth-child(12){font-size: 25px; padding-bottom: 08px; background-color: #f08080;}
+  #calculator button:nth-child(16){font-size: 25px; padding-bottom: 08px; background-color: #7d93e0;}
+  #calculator button:nth-child(20){font-size: 25px; padding-bottom: 08px; background-color: #9477af;}
+  
+
+/* ----------------- calc-2 ----------------- */
+.calculator-grid,.calculator-grid::after,.calculator-grid::before{box-sizing: border-box;font-family: monospace,sans-serif;font-weight: bold;  padding: 0%;margin: 0%;background: linear-gradient(to right, #00aaff, #00ff6c);}
+
+/* Calculator_data */
+.calculator-grid{display: grid;align-content: center;justify-content: center;height: 100vh;grid-template-columns: repeat(4,70px);grid-template-rows: minmax(5,120px) repeat(5,70px);}
+
+/* Keyboard Screen */
+.calculator-grid > button{cursor: pointer;font-size: 2rem;border: 1px solid #fff;outline: none;background-color: rgba(255,255,255,.75);}
+.calculator-grid > button:hover{background-color: rgba(255,255,255,.90);}
+.span-2{grid-column: span 2;}
+
+/* output screen */
+.calculator-grid .output{grid-column: 1/-1;background-color: rgba(0,0,0,.75);display: flex;align-items: flex-end;justify-content: space-around;flex-direction: column;padding: 25px 10px;word-wrap: break-word;word-break: break-all;border-radius: 5px 5px 0  0;}
+.output .previous-operand{font-size: 1.5rem;color: rgba(255, 255, 255, .75);}
+.output .current-operand{font-size: 2.5rem;color: #fff;}

@@ -1,0 +1,924 @@
+// Import section
+@import "config";
+
+// general Css or global scss
+* {margin: 0;padding: 0;outline: 0;box-sizing: border-box;}
+a,a:hover {list-style-type: none;}
+h1,h2,h3,h4,h5,h6,a,ul,ol,button {margin: 0;padding: 0;}
+body {scroll-behavior: smooth;overflow-x: hidden;height: 100vh;background-color: $background-color;position: relative;font-family: "Poppins", sans-serif;}
+html {scroll-behavior: smooth;}
+
+
+// include scss for same basic elements like navbar,footer etc... etc...
+
+// NavBar Section
+.navbar {
+    background: $nav-background;
+    padding: 0px 0px;
+
+    .navbar-toggler,
+    .navbar-toggler:focus,
+    .navbar-toggler:hover{
+        border: none;
+        outline: none;
+    }
+    
+    .nav-item {
+        position: relative;
+        padding: 0px 10px;
+        .nav-link {
+            color: $text-color !important;
+            padding: 20px 0px;
+            text-transform: uppercase;
+            &:hover,&:visited{color: $text-color !important;}
+            &:before {
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: transparent;
+                content: "";
+                opacity: 0;
+                -ms-transition: opacity 0.5s,
+                 -webkit-transform 0.3s;
+                 -webkit-transition: opacity 0.3s, 
+                 -webkit-transform 0.3s;
+                 transition: opacity 1s, 
+                 transform 0.3s;
+                 -ms-transform: translateY(100px);
+                 -webkit-transform: translateY(10px);
+                 transform: translateY(10px);
+            }
+        }
+        &:hover .nav-link:before {
+            opacity: 10;
+            -ms-transform: translateY(0px);
+            -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+            bottom: 10px;
+            background: $primary-color;
+        }
+    }
+    
+} //Done
+
+
+// hero-section
+.heroX{
+    background: url("../img/header/bg-banner.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+    &__effect {
+        background-color: rgba(56, 62, 72, 0.7);
+        padding: 50px 0px 0px 0px;
+        
+        .header-info {
+            background-color: #fff;
+            border-top: 10px solid $primary-color;
+            top: 20px;
+            box-shadow: 0 25px 16px 0 rgba(0, 0, 0, 0.2);
+            position: relative;
+            border-radius: 0 0 5px 5px;
+            
+            .person-img {padding: 50px 0px 0px 50px;}
+        } // header Info
+
+        .heroX__person-info {
+            padding: 150px 0px 0px 0px !important;
+            @include testX;
+          
+            & h1 {
+                color: #000;
+                text-transform: uppercase;
+                font-family: "Poppins", sans-serif;
+                font-size: 50px;
+                font-weight: bolder;
+            }
+            & p {
+                color: $secondary-color;
+                font-family: "Poppins", sans-serif;
+                font-size: 14px;
+                padding: 20px 100px 25px 0px;
+            }
+            & span {
+                color: $primary-color;
+                font-size: 15px;
+                font-family: "Poppins", sans-serif;
+            }
+            .btn{
+                border: 1px solid $primary-color;
+                font-family: "Poppins", sans-serif;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                padding: 5px 20px;
+                transition-duration: 0.3s;
+                @include transition-ease;
+
+                &:hover{transition-duration: .3s;}
+            } // Utility Class
+            .btn-1 {
+                color: $text-color;
+                background: $primary-color;
+                &:hover {
+                    background-color: $text-color;
+                    color: #000;
+                }
+            } // btn Css
+            .btn-2 {
+                margin:0px 0px 0px 10px;
+                &:hover {
+                    background: $primary-color;
+                    color: $text-color;
+                }
+            } // btn Css
+        } // Person Info
+    } // background Effect
+}  // Main Hero Banner
+
+
+// About Section
+.about{
+    padding: 50px 0;
+    @include transition-ease;
+
+    & h3 {font-weight: bold;text-transform: uppercase;}
+    & p {color: $secondary-color;padding:0px 0px 30px 0px;}
+    
+    // Issue
+    &-me .col-md-3{margin: auto;text-align: center;}
+    &-content p {color: $secondary-color;font-size: 18px;padding:0px 0px 10px 0px;}
+    // End
+    
+    &-img {padding: 0px 0px 0px 0px;}
+
+    .social-media-handle {
+        display: block;
+
+        & li {
+            display: inline-block;
+            padding:0px 20px 0px 0px;
+            
+            & a {
+                color: $primary-color;
+                &:hover{color: #000;transition-duration: 0.2s;font-size: 18px;}
+            }
+            & span{color: #000;text-transform: uppercase;font-weight: bold;}
+        }
+    }
+} // About Done
+
+
+// Services Section
+.services{
+    padding:0px 0px 50px 0px;
+    & h3{font-weight: bold;text-transform: uppercase;}
+    & p{color: $secondary-color;padding:0px 0px 30px 0px;} //General Css End
+
+    // Cards
+    .service-card{
+        transition: 0.3s;
+        border-radius: 5px;
+        padding: 20px 0px;
+
+        & h4{padding: 15px;}
+        & p{padding: 0px 15px 15px 15px;}
+        & a{& img{padding: 20px 20px 0px 15px;}}
+        &:hover{box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);} 
+    } // Card Done  
+} //Services Done
+
+
+// expertise Section
+.expertise{
+    padding: 0px 0px 50px 0px;
+    
+    & p{color: $secondary-color;padding:0px 0px 30px 0px;}
+    & h3{font-weight: bold;text-transform: uppercase;}
+
+    .progress-row {
+        padding:0px 0px 20px 0px;
+        &:last-child{padding: 0%;}
+
+        .progress{
+            border-radius: 0px;
+            &-bar{background-color: $primary-color;}
+        }
+    }
+}// expertise Done
+
+
+// Education Section
+.education{
+    padding:0px 0px 50px 0px;
+
+    & h3{font-weight: bold;text-transform: uppercase;}
+    & p{color: $secondary-color;padding: 0px 0px 30px 0px;}
+    & .custom-row{padding: 0px 0px 50px 0px;&:last-child{padding: 0%;}}
+
+    .col-md-1 {flex: 0 0 8.33333% !important;max-width: 3.333% !important;}
+
+    & img {padding: 10px 0px 0px 0px;}
+    .edu-details-card{
+        border: 2px solid #f7f7f7;
+        border-left: 3px solid $primary-color;
+        padding: 20px 20px;
+
+        & h4{text-transform: uppercase;font-weight: bold;}
+        & span{color: $primary-color;font-weight: bold;}
+        & p:last-child{padding: 10px 0px 0px 0px;font-weight: bold;color: $secondary-color;}
+        &:hover{box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);}
+    }
+
+} // Education Done
+
+
+// Education Section
+.experiance{
+    padding:0px 0px 50px 0px;
+
+    & h3{font-weight: bold;text-transform: uppercase;}
+    & p{color: $secondary-color;padding: 0px 0px 30px 0px;}
+    & img{padding:0px 0px 0px 10px;}
+    & .custom-row {padding:0px 0px 50px 0px; & p{padding: 10px 0 0 50px;}}
+    
+    .experiance-details-card {
+        border: 2px solid #f7f7f7;
+        border-left: 3px solid $primary-color;
+        padding: 20px 20px;
+
+
+        & h4{text-transform: uppercase;font-weight: bold;}
+        & span{color: $primary-color; font-weight: bold; & a{color: $secondary-color;}}
+        & p:last-child{padding: 10px 0px 0px 0px;font-weight: bold;color: $secondary-color;}
+        &:hover{box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);}
+    }
+
+} // Education Done
+
+// Interest Section
+.my-intrest{
+    padding:0px 0px 50px 0px;  
+    & h3{font-weight: bold;text-transform: uppercase;}
+    & p{color: $secondary-color;padding: 0px 0px 30px 0px;}
+    
+    .card-details {
+        border: 2px solid #f7f7f7;
+        padding: 20px;
+
+        &:hover{box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);}
+    }
+} // Interest Done
+
+
+// Portfolio Section
+.portfolio{
+    padding: 0px 0px 50px 0px;
+
+    & h3{font-weight: bold;text-transform: uppercase;}
+    & p{color: $secondary-color;padding: 0px 0px 30px 0px;}
+
+    .gallery_product {margin: 0px 0px 30px 0px;}
+    .portfolio-cat{
+        display: block;
+
+        & .nav-link{
+            display: inline-block;
+            padding: 0px 10px;
+
+            & .filter-button{
+                text-transform: uppercase;
+                font-weight: bold;
+                color: $secondary-color !important;
+                text-decoration: none;
+
+                &:hover{
+                    color: $primary-color!important;border-bottom: 2px solid $primary-color;text-decoration: none;   
+                }
+            }
+        }
+    }
+    
+} // Portfolio Done
+
+
+// Plan-Pricing Section
+.pricing-card{
+    padding: 0px 0px 30px 0px;
+
+    & h3{font-weight: bold;text-transform: uppercase;}
+    & p{color: $secondary-color;padding: 0px 0px 30px 0px;}
+
+    .card-content{
+        background-color: $text-color;
+        padding: 0px 0px;
+        
+        &:hover{border-bottom: 3px solid $primary-color;box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);}
+        &:hover .head-text,
+        &:hover .head-text span,
+        &:hover .head-text h1,
+        &:hover .head-text p {background-color: $primary-color;color: $text-color;}
+        
+        .head-text{
+            & span{color: #000;font-weight: bolder;font-size: 20px;text-transform: uppercase;}
+            & h1{font-size: 50px;color: $primary-color;font-weight: bold;padding: 15px 0px 0px 0px;}
+            & p{text-transform: uppercase;}
+
+            &:hover span,
+            &:hover h1,
+            &:hover p{color: $text-color;}
+        }
+        .card-text{
+            .plans-feature {
+                list-style-type: none;
+                & li{
+                    position: relative;
+                    padding: 10px 10px;
+                    color: $secondary-color;
+
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        left: 55px;
+                        bottom: 0;
+                        height: 0px;
+                        width: 70%;
+                        border-bottom: 1px solid $secondary-color;
+                    }
+                }  
+            }
+            button{
+                background-color: $primary-color;
+                margin: 20px 0px;
+                padding: 10px 35px;
+                color:$text-color;
+                font-weight: bold;
+                text-transform: uppercase;
+                border-radius: 0%;
+                border: none;
+                transition-duration: 0.3s;
+                &:hover{
+                    color: $text-color;
+                    background-color:$primary-color;
+                    transition-duration: 0.3s;
+                    border-radius: 10px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+} // Plan-Pricing Done
+
+
+// Testimonial Section
+.testimonial{
+    padding: 30px 0px;
+
+    & h3{font-weight: bold;text-transform: uppercase;}
+    & p{color: $secondary-color;padding: 0px 0px 30px 0px;}
+
+    &-content{align-items: center; & p{padding: 50px 0px 20px 0px;color: $secondary-color;}}
+
+    .carousel-person-details {
+        padding: 0px 0px 0px 20px;
+
+        & .c-name{font-weight: bold;text-transform: uppercase;color: #000;letter-spacing: 2px;}
+        & .c-position{font-weight: bold;color: $primary-color;}
+    }
+    .carousel-indicators {display: none;}
+
+} // Testimonial Done
+
+
+// Blog Section
+.blog{
+    padding: 0px 0px 50px 0px; 
+
+    & h3{font-weight: bold;text-transform: uppercase;}
+    & p{color: $secondary-color;padding: 0px 0px 30px 0px;}
+
+    .topleft-img {
+        position: absolute;
+        top: 0px;
+        left: 15px;
+        background-color: $primary-color;
+        font-size: 18px;
+        padding: 10px 20px;
+        color:$text-color;
+        text-transform: uppercase;
+        font-weight: bold;
+    }  
+    &-content{
+        background-color: #fff;
+        position: relative;
+        bottom: 20px;
+        height: auto;
+        width: auto;
+        box-shadow: 1px 1px 5px $secondary-color;
+        padding: 20px 20px;
+        border-bottom: 5px solid $primary-color;
+
+        & h4{
+            text-transform: uppercase;
+            padding: 10px 0px; 
+            &:hover{color: $primary-color;}
+        }
+        & p{color: $secondary-color;}
+        & .second-2p{border-bottom: 1px solid $secondary-color;}
+        & .tags{
+            display: block;
+
+            & li{
+                display: inline-block;
+                list-style-type: none;
+                padding: 20px 10px 10px 10px;
+                color: $secondary-color;
+                
+                & i{color: #888;}
+            }
+        }
+    }  
+} // Blog Done
+
+
+// Contact Section
+.contact{
+    padding: 0px 0px 50px 0px;
+    
+    & h3{font-weight: bold;text-transform: uppercase;}
+    & p{color: $secondary-color;padding: 0px 0px 30px 0px;}
+
+    &-form ul{
+        list-style-type: none;
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 12px 0px 2px 0px;
+            margin: 8px 0;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $secondary-color;
+        }
+        
+        input[type="text"]:hover,
+        input[type="email"]:hover,
+        textarea:hover {border-bottom: 3px solid $primary-color;}
+        ::placeholder {font-weight: bold;}
+
+        .contact-btn {
+            padding: 10px 10px;
+            background-color: $primary-color;
+            font-weight: bold;
+            color: $text-color;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: none;
+            transition-duration: 0.3s;
+            
+            &:hover{background-color: $primary-color;color: $text-color;border-radius: 50px;transition-duration: .3s;border: none;}
+        }
+
+    }
+    .address-info{
+        background-color: #fff;
+        padding: 0%;
+        border-bottom: 3px solid $primary-color;
+
+        & p{
+            padding: 0%;
+            margin: 0%;
+            & i{display: none;}
+        }
+        & .contact-details{padding: 10px 0;}
+        & .contact-img {padding: 8px 10px 20px 0px;}
+    }
+
+} // Contact Done
+
+
+// Footer Section
+.footer{padding: 40px 0px 20px 0px;} // Footer Done
+
+.main-footer{
+    margin: 0 auto;
+    padding: 0px 0px 30px 0px;
+
+    & ul{
+        display: block;
+        & li{
+            display: inline-block;
+            padding: 0 20px;
+
+            &:first-child{padding-left: 0%;}
+            & a{
+                color: $primary-color;
+                &:hover{
+                    transition-duration: .3s;
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+} //main-footer
+ 
+.secondry-footer {
+    color: $secondary-color;
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+
+    & a{
+        color: $primary-color;
+        font-weight: bold;
+        text-decoration: none;
+        &:hover{
+            color: #000;
+            transition-duration: 0.3s;
+        }
+    }
+} //main-footer
+
+
+// Media Queries
+@media ($lg-width:$lg-target-width){
+    body {
+        overflow-x: hidden;
+        .c-name,.c-position {display: none;}
+        .header-info{box-shadow:none !important;top: 0px !important;border-radius: 0% !important;}
+    }
+} //1200 Done
+
+@media screen and ($md_min-width: $md_min-target-width) and ($lg_md-width: $lg_md-target-width) {
+    
+    .navbar{
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        .nav-item {padding: 0px 10px !important;}
+    } //NavBar Done
+
+    .bg-effect {
+        padding: 120px 0px 0px 0px !important;
+        
+        & .header-info{
+            background-color: #fff;
+            border-top: 10px solid $primary-color;
+
+            & .person-img{max-width: 30%;margin: auto;padding: 50px 0px 0px 0px  !important;}
+            & .person-info{
+                padding: 130px 0px 0px 0px !important;
+                & h1{font-size: 40px;}
+                & span{font-size: 18px;padding: 0px;}  
+                & p{padding: 10px 0px;font-size: 15px ;}
+            }
+        }
+    } // Hero Section Done
+
+    .about-content p {
+        font-size: 15px !important;
+        & .social-media-handle li:first-child{padding: 5px 10px 0px 0px;}
+    } // About Section Done
+    
+    .testimonial-content p {padding: 0px 0px 20px 0px !important;} // Testimonial Section Done
+    .service-card p {font-size: 14px !important;} // Services Section Done
+    .education img{display: none;} // Education Section Done
+
+
+    // Pricing Card
+    .pricing-card .card-content .card-text .plans-feature li:before {content: "";position: absolute;left: 33px;}
+
+
+    // Blog Section
+    .tags li {
+        padding: 10px 05px !important;
+        & i {font-size: 14px;}
+    }
+    // Interest Section.
+    .my-intrest{
+        & .card-01{max-width: 55%;}
+        & .card-02{max-width: 110%;}
+        & .card-03{max-width: 50%;} 
+    }
+} // 991 Done
+
+@media ($md_max-width:$md_max-target-width){
+    
+    body {overflow-x: hidden;}
+    .navbar{
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        .nav-item {padding: 0px 10px !important;}
+    } //NavBar Done
+
+    /* Inner Header Data */
+    .header-info{
+        background-color: transparent !important;
+        border: none !important;
+
+        & .person-img {
+            max-width: 50%;
+            margin: 0 auto;
+            padding: 30px 0px 30px 0 !important;
+        }
+        & .person-info{
+            border-top: 10px solid $primary-color;
+            background-color: #fff !important;
+            opacity: 0.80;
+            max-width: 100%;
+            padding: 10px 0px !important;
+            
+            & h1{font-size: 35px !important;padding: 10px 10px 0px 10px;}
+            & p{padding: 10px 10px;font-size: 16px !important;}
+            & span{font-size: 20px !important;padding: 10px 10px 0px 10px;}
+            & btn{
+                padding: 5px 10px !important;
+                letter-spacing: 1px !important;
+            }
+            & .btn-1{margin: 0px 05px 0px 10px !important;}
+            & .btn-2{margin: 0% !important;}
+        }
+    }  // Header-Info done
+
+    /* About */
+    .about-content p{text-align: justify;}
+    .about p {margin: 0% !important;} // About Section Done
+
+    /* Services */
+    .services p {margin: 0% !important;padding: 0px 0px 30px 0px !important;}
+    .service-card {
+        background-color: #fff;
+        margin: 0px 0px 10px 0px !important;
+        border: 1px solid rgba(0, 0, 0, 0.01);
+        
+        & h4 {font-size: 25px;padding: 10px 15px !important;}
+        & p {padding: 15px 15px !important;}
+        & img {padding: 10px 15px;}
+    } // Services Section Done
+
+    /* ProgressBar */
+    .progress-row {padding: 0px 0px 0px 0px !important;} // ProgressBar Section Done
+
+    /* Education */
+    .education{
+        & p{font-size: 15px !important;padding: 0px 0px 30px 0px;}
+        & .edu-details-card{
+            & h4{font-size:20px;}
+            & span{font-size: 15px;}
+            p:last-child{font-size: 13px !important;font-weight: 500 !important;}
+            &:last-child {margin: 0% !important;}
+        }
+        & img {display: none;}
+    } // Education Section Done
+    
+    /* Experiance */
+    .experiance{
+        & p {font-size: 15px !important;padding: 0px 0px 30px 0px;margin: 0%;}
+        & .experiance-details-card{
+            & h4{font-size:20px ;}
+            & span{font-size: 15px;}
+            p:last-child{font-size: 13px !important;font-weight: 500 !important;}
+            &:last-child{margin: 0% !important;}
+        } 
+    .custom-row p {padding: 0px 0px 5px 0px !important ;}
+    } // Experiance Section Done
+
+    // myInterest
+    .my-intrest .card-details{margin: 0 0 20px 0;}
+
+    // Pricing Card
+    .pricing-card {
+        & .col-md-4{padding: 20px 80px !important;}
+        & .card-content{
+            background-color: #FAFAFA;
+            margin: 10px 0px !important;
+        }
+        & .head-text span{    
+            top: 11px;
+            position: relative;
+        }
+    } // Pricing-Card Section Done
+
+    // PortFolio Start
+    .portfolio .gallery_product {
+        margin: 0px 0px 30px 0px;
+        text-align: center;
+    } // Portfolio Section End
+
+    /* Testinomial */
+    .testimonial .carousel-inner .carousel-item .img-fluid{max-width: 30%;margin: 0 auto;}
+    .testimonial-content p {padding: 0px 0px 20px 0px;color: $secondary-color;text-align: justify;} // Testinomial Section Done
+
+    // Blog
+    .blog-content{margin: 0 0 50px 0;} //Blog Section Done
+
+    .contact-img {display: none;}
+    .address-info p i{display: inline-block !important;}
+    .address-info .contact-details {padding: 20px 0px 20px 35px !important;}
+
+} // 767.98px
+
+@media ($sm_md-width:$sm_md-target-width){
+    // General Css
+    .expertise h3,.education h3,.experiance h3,.portfolio h3,.testimonial h3,.blog h3,.contact h3,.my-intrest h3,.pricing-card h3,.about h3,.services h3{font-size: 25px;}
+    .about p,.services p,.expertise p,.education p,.experiance p,.portfolio p,.testimonial p,.blog p,.contact p,.my-intrest p,.pricing-card p{font-size: 15px; padding: 0px 0px 30px 0px;} // General Css Ends
+   
+  /* Header */
+  .header-info .person-info {
+    & h1{font-size: 30px !important;padding: 10px 10px;}
+    & span{font-size: 15px !important;padding: 10px 10px;}
+    & p{padding: 10px 10px;font-size: 13px !important;text-align: justify;}
+    .btn-1{padding: 0px 5px !important;margin: 0px 5px 0px 10px !important;letter-spacing: 0px !important;}
+    .btn-2{padding: 0px 5px !important;margin: 0% !important;letter-spacing: 0px !important;}  
+  } //Header-info Ends
+
+  /* About */
+  .about .about-content p {font-size: 14px;text-align: justify;}
+  .social-media-handle li {
+      padding: 0px 15px 0px 0px !important;
+      &:first-child {width: 100%;padding: 0px 0px 10px 0px !important;}
+    } // About Section Ends
+  
+  /* Services */
+  .service-card p {padding: 0px 15px 10px 15px !important;} 
+  .services .service-card a img {padding: 20px} // Services Section End
+
+  /* ProgressBar */
+  .progress {height: 0.6rem;}
+  .progress-row {font-size: 15px;} // ProgressBar Section End
+
+  /* PortFolio */     
+  .filter-button {font-size: 13.80px;} // Portfolio Section End
+
+  // Pricing Card   
+  .pricing-card {& .col-md-4{padding: 0px 20px !important;}
+  } // Pricing-Card Section Done
+  
+  
+  /* Testinomial */
+  .testimonial-content p {font-size: 15px;text-align: justify;padding: 0% !important;} // Testinomial Section Done
+
+  /* Blogs */
+  .blog{
+    & .topleft-img {font-size: 15px;padding: 5px 10px;}
+    & .blog-content{
+        & h4{font-size: 25px;}
+        & p{font-size: 14px;} 
+        & .second-1p,& .second-2p{font-size: 13px;text-align: justify;padding: 0px 0px 10px 0px;}
+        & .tags li{font-size: 12px;padding: 10px 5px 0px 5px;}
+    }
+  } // Blogs Section Done
+
+  /* Contact */
+  .contact-img {display: none;}
+  ::placeholder {font-weight: bold !important;font-size: 14px;font-family: "Poppins", sans-serif;}
+  .address-info .contact-details {padding: 15px 0px 10px 35px !important;}
+  input[type="text"],input[type="email"],textarea {padding: 0px 0px 2px 0px !important;margin: 4px 0 !important;border-bottom: 1px solid $secondary-color !important;}
+  input[type="text"]:hover,input[type="email"]:hover,textarea:hover {border-bottom: 3px solid $primary-color !important;}
+  ul li .contact-btn {padding: 0px 5px !important;letter-spacing: 0px !important;} // Contact Section Done 
+
+  // Footer    
+  footer {padding: 0px 0px 20px 0px !important;}
+  .main-footer ul li {padding: 0px 07px !important;}
+  .secondry-footer {font-size: 14px;} // Footer Ends
+
+  
+} // 480px
+
+@media ($sm:$sm_target){
+  /* NavBar */
+  .navbar-nav .nav-item .nav-link{padding: 10px 0px !important;font-size: 13px;}
+  .service-card {
+      margin: 0px 0px 20px 0px !important;
+      & h4 {font-size: 20px;padding: 10px 15px !important;}
+      & p {padding: 0px 15px 10px 15px !important;}
+      & img {padding: 10px 15px; }
+  }
+  .portfolio .portfolio-cat .nav-link {display: inline-block;padding: 0px 4px;}  
+  .pricing-card .card-content .card-text .plans-feature li:before {left: 42px;}
+} // 320px
+
+@media ($sm-mini:$sm_target-mini){
+  .navbar-nav .nav-item .nav-link{font-size: 12px;}
+  .navbar{
+    &-brand img{max-width: 50% !important;}
+    &-toggler{padding: 0% !important;margin-right: 10px !important;}
+  }
+
+  .person-info{
+    & .btn { font-size: 0.91rem !important; }
+    & .btn-1 {padding: 0px 0px !important;letter-spacing: 0px !important;}
+    & .btn-2 {padding: 0px 0px !important;letter-spacing: 0px;}
+  }  
+  
+  /* General Css */
+  .expertise h3,.education h3,.experiance h3,.portfolio h3,.testimonial h3,.blog h3,.contact h3,.my-intrest h3,.pricing-card h3,.about h3,.services h3{font-size: 20px;}
+  .about p,.services p,.expertise p,.education p,.experiance p,.portfolio p,.testimonial p,.blog p,.contact p,.my-intrest p,.pricing-card p{font-size: 14px;}
+ 
+  /* Portfolio */
+  .filter-button {font-size: 9.6px;}
+
+
+
+  /* Blog */
+  .blog .blog-content .tags li {font-size: 11px;padding: 10px 0px 0px 5px;  }
+  .blog .blog-content h4 {font-size: 15px;}
+  .blog .blog-content .second-1p,.blog .blog-content .second-2p {font-size: 10px !important;}
+  
+  /* Testinomial */
+  .testimonial-content p {font-size: 11px;}
+  
+  /* Footer */
+  .main-footer ul li {margin: 0%;padding: 0px 07px !important;}
+  .social-media-handle li {padding: 0px 10px 0px 0px !important;}
+
+} // 290px
+
+
+// Custom Styling
+@media (min-width:1200px) and (max-width:1400px){html,body{width: 100% !important;height: 100% !important;margin: 0px !important;padding: 0px !important;overflow-x: hidden !important; }}
+@media (max-width: 1020px) {.custom-row p:first-child {padding: 10px 0px 0px 25px;}}
+@media (max-width:1550px){body{overflow-x: hidden !important;}}
+
+@media (max-width:412px){
+    .pricing-card .card-content{
+        & .head-text{
+            & span{font-size: 15px !important;}
+            & h1{font-size: 30px !important;}
+            & p{font-size: 11px !important;}
+        }
+        & .card-text{
+            .plans-feature li{
+                font-size: 12px;
+                &:before{
+                   left: 48px; 
+                }
+            }
+            & button{
+                margin: 20px 0px 10px 0;
+                font-size: 15px;padding: 0px 10px;
+            }
+        }
+    }  
+}
+
+// @media ($sm_lg-width:$sm_lg-target-width){} // 580px
+// @media ($sm-width:$sm-target-width){} // 420px
+// @media ($sm-mini:$sm_target-mini){} // 290px
+
+
+
+
+// let find the approaches for the single file scss and multiple files scss.
+    // => if i use the 1st approach there will be two files.
+        // 1. main.scss -> attached to main.css
+        // 2. config.scss -> connected to main.scss      
+ 
+    // => if i use the 2nd approach there will be two files.
+        // 1. main.scss -> attached to main.css
+        // 2. there will be dist folder where this folder contain all following sectionn css in diffrent files
+        // 
+        // Conclusion we will follow approach one because the first approach best
+
+
+    // changes in main.scss 
+        // secondary color,add smooth transition 
+        // review your main.scss
+// 
+    // Then start working on responsive
+        // define your width in px using variable (max-widht: $large-device)
+        // 
+        // variable as fully query
+            // $information-phone: "only screen and (max-width : 320px)";
+            // @media #{$information-phone} {background: red;}
+// 
+            // $width-name: max-device-width;
+            // $target-width: 320px;
+// 
+            // @media screen and ($width-name : $target-width) {background: red;}
+// 
+            // $break-small: 320px;
+            // $break-large: 1024px;
+// 
+            // @mixin respond-to($media) {
+            //   @if $media == handhelds {
+                // @media only screen and (max-width: $break-small) { @content; }
+            //   }
+            //   @else if $media == medium-screens {
+                // @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+            //   }
+            //   @else if $media == wide-screens {
+                // @media only screen and (min-width: $break-large) { @content; }
+            //   }
+            // }
+// 
+            // .profile-pic {
+            //   float: left;
+            //   width: 250px;
+            //   @include respond-to(handhelds) { width: 100% ;}
+            //   @include respond-to(medium-screens) { width: 125px; }
+            //   @include respond-to(wide-screens) { float: none; }
+            // }
+// 

@@ -1,0 +1,4 @@
+menu color : #fff
+primary color: #00527d
+about p gotham light: #282828
+2nd footer color: #6c6c6c
